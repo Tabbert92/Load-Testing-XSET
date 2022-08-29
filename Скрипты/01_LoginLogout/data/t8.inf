@@ -1,0 +1,8 @@
+[t8]
+FileName1=t8_seed.html
+URL1=https://clientservices.googleapis.com/chrome-variations/seed?osname=win&channel=stable&milestone=104
+Total=2
+ContentType=text/javascript
+SnapshotXmlFile=snapshot_8.xml
+FileName2=t8_ga.html
+URL2=https://ssl.google-analytics.com/ga.js

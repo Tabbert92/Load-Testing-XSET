@@ -1,0 +1,15 @@
+[hosts]
+localhost=
+c.urs.microsoft.com=
+iecvlist.microsoft.com=
+192.168.1.46=
+www.bing.com=
+config.edge.skype.com=
+substrate.office.com=
+clientservices.googleapis.com=
+ssl.google-analytics.com=
+clients2.google.com=
+update.googleapis.com=
+content-autofill.googleapis.com=
+safebrowsing.googleapis.com=
+cdn.jsdelivr.net=

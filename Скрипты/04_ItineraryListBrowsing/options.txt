@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\baldr\OneDrive\ƒокументы\VuGen\Scripts\04_ItineraryListBrowsing
+-ID:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\baldr\onedrive\документы\vugen\scripts\04_itinerarylistbrowsing\\logfile.log
+c:\users\baldr\onedrive\документы\vugen\scripts\04_itinerarylistbrowsing\\combined_04_ItineraryListBrowsing.c
+c:\users\baldr\onedrive\документы\vugen\scripts\04_itinerarylistbrowsing\\pre_cci.c
