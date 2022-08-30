@@ -2612,6 +2612,11 @@ vuser_init()
 # 1 "Action.c" 1
 Action()
 {
+	lr_start_transaction("01_LoginLogout");
+	
+	web_reg_find("Fail=NotFound",
+			"Text/IC=A Session ID has been created and loaded into a cookie",
+			"LAST");
 
 	web_url("WebTours", 
 		"URL=http://localhost:1080/WebTours/", 
@@ -2626,27 +2631,37 @@ Action()
 	
 
 	lr_start_transaction("login");
-
-	web_submit_form("login.pl", 
-		"Snapshot=t19.inf", 
-		"ITEMDATA", 
-		"Name=username", "Value=jojo", "ENDITEM", 
-		"Name=password", "Value=bean", "ENDITEM", 
-		"Name=login.x", "Value=47", "ENDITEM", 
-		"Name=login.y", "Value=3", "ENDITEM", 
-		"LAST");
+	
+		web_reg_find("Fail=NotFound",
+			"Text/IC=User password was correct",
+			"LAST");
+	
+		web_submit_form("login.pl", 
+			"Snapshot=t19.inf", 
+			"ITEMDATA", 
+			"Name=username", "Value={userName}", "ENDITEM", 
+			"Name=password", "Value={password}", "ENDITEM", 
+			"Name=login.x", "Value=47", "ENDITEM", 
+			"Name=login.y", "Value=3", "ENDITEM", 
+			"LAST");
 
 	lr_end_transaction("login",2);
 
 
 	lr_start_transaction("logout");
+	
+		web_reg_find("Fail=NotFound",
+			"Text/IC=A Session ID has been created and loaded into a cookie",
+			"LAST");
 
-	web_image("SignOff Button", 
-		"Alt=SignOff Button", 
-		"Snapshot=t20.inf", 
-		"LAST");
+		web_image("SignOff Button", 
+			"Alt=SignOff Button", 
+			"Snapshot=t20.inf", 
+			"LAST");
 
 	lr_end_transaction("logout",2);
+	
+	lr_end_transaction("01_LoginLogout", 2);
 
 	return 0;
 }

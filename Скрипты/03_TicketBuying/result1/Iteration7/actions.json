@@ -1,0 +1,86 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP43",
+                "stepName": "Url: WebTours",
+                "infFile": "t1.inf",
+                "time": 1661873894716
+            },
+            {
+                "stepId": "STEP44",
+                "stepName": "Submit Form: login.pl",
+                "infFile": "t2.inf",
+                "time": 1661873894883
+            },
+            {
+                "stepId": "STEP45",
+                "stepName": "Image: Search Flights Button",
+                "infFile": "t3.inf",
+                "time": 1661873895059
+            },
+            {
+                "stepId": "STEP46",
+                "stepName": "Submit Form: reservations.pl",
+                "infFile": "t4.inf",
+                "time": 1661873895168
+            },
+            {
+                "stepId": "STEP47",
+                "stepName": "Submit Form: reservations.pl_2",
+                "infFile": "t5.inf",
+                "time": 1661873895267
+            },
+            {
+                "stepId": "STEP48",
+                "stepName": "Submit Form: reservations.pl_3",
+                "infFile": "t6.inf",
+                "time": 1661873895388
+            },
+            {
+                "stepId": "STEP49",
+                "stepName": "Image: SignOff Button",
+                "infFile": "t7.inf",
+                "time": 1661873895530
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "login",
+                "rawStartTime": 1661873894739,
+                "rawEndTime": 1661873894893,
+                "thinkTime": 0.0,
+                "wastedTime": 0.019501686096191407
+            },
+            {
+                "transactionName": "ticketSearch",
+                "rawStartTime": 1661873894904,
+                "rawEndTime": 1661873895277,
+                "thinkTime": 0.0,
+                "wastedTime": 0.05604958534240723
+            },
+            {
+                "transactionName": "ticketBuying",
+                "rawStartTime": 1661873895288,
+                "rawEndTime": 1661873895399,
+                "thinkTime": 0.0,
+                "wastedTime": 0.019321441650390626
+            },
+            {
+                "transactionName": "logout",
+                "rawStartTime": 1661873895410,
+                "rawEndTime": 1661873895541,
+                "thinkTime": 0.0,
+                "wastedTime": 0.01814889907836914
+            },
+            {
+                "transactionName": "03_TicketBuying",
+                "rawStartTime": 1661873894598,
+                "rawEndTime": 1661873895552,
+                "thinkTime": 0.0,
+                "wastedTime": 0.13248658180236817
+            }
+        ]
+    }
+]

@@ -1,4 +1,4 @@
-# 1 "c:\\users\\baldr\\onedrive\\\344\356\352\363\354\345\355\362\373\\vugen\\scripts\\02_ticketsearchwithoutbuying\\\\combined_02_TicketSearchWithoutBuying.c"
+# 1 "d:\\load testing xset\\load-testing-xset\\\361\352\360\350\357\362\373\\02_ticketsearchwithoutbuying\\\\combined_02_TicketSearchWithoutBuying.c"
 # 1 "D:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -968,7 +968,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\users\\baldr\\onedrive\\\344\356\352\363\354\345\355\362\373\\vugen\\scripts\\02_ticketsearchwithoutbuying\\\\combined_02_TicketSearchWithoutBuying.c" 2
+# 1 "d:\\load testing xset\\load-testing-xset\\\361\352\360\350\357\362\373\\02_ticketsearchwithoutbuying\\\\combined_02_TicketSearchWithoutBuying.c" 2
 
 # 1 "D:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1136,7 +1136,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\users\\baldr\\onedrive\\\344\356\352\363\354\345\355\362\373\\vugen\\scripts\\02_ticketsearchwithoutbuying\\\\combined_02_TicketSearchWithoutBuying.c" 2
+# 2 "d:\\load testing xset\\load-testing-xset\\\361\352\360\350\357\362\373\\02_ticketsearchwithoutbuying\\\\combined_02_TicketSearchWithoutBuying.c" 2
 
 # 1 "globals.h" 1
 
@@ -2593,18 +2593,24 @@ void
  
 
 
-# 3 "c:\\users\\baldr\\onedrive\\\344\356\352\363\354\345\355\362\373\\vugen\\scripts\\02_ticketsearchwithoutbuying\\\\combined_02_TicketSearchWithoutBuying.c" 2
+# 3 "d:\\load testing xset\\load-testing-xset\\\361\352\360\350\357\362\373\\02_ticketsearchwithoutbuying\\\\combined_02_TicketSearchWithoutBuying.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "c:\\users\\baldr\\onedrive\\\344\356\352\363\354\345\355\362\373\\vugen\\scripts\\02_ticketsearchwithoutbuying\\\\combined_02_TicketSearchWithoutBuying.c" 2
+# 4 "d:\\load testing xset\\load-testing-xset\\\361\352\360\350\357\362\373\\02_ticketsearchwithoutbuying\\\\combined_02_TicketSearchWithoutBuying.c" 2
 
 # 1 "Action.c" 1
 Action()
 {
+
+	lr_start_transaction("02_TicketSearchWithoutBuying");
+	
+	web_reg_find("Fail=NotFound",
+			"Text/IC=A Session ID has been created and loaded into a cookie",
+			"LAST");
 
 	web_url("WebTours", 
 		"URL=http://localhost:1080/WebTours/", 
@@ -2619,62 +2625,76 @@ Action()
 	
 
 	lr_start_transaction("login");
+	
+		web_reg_find("Fail=NotFound",
+				"Text/IC=User password was correct",
+				"LAST");
 
-	web_submit_form("login.pl", 
-		"Snapshot=t2.inf", 
-		"ITEMDATA", 
-		"Name=username", "Value=jojo", "ENDITEM", 
-		"Name=password", "Value=bean", "ENDITEM", 
-		"Name=login.x", "Value=45", "ENDITEM", 
-		"Name=login.y", "Value=13", "ENDITEM", 
-		"LAST");
+		web_submit_form("login.pl", 
+			"Snapshot=t2.inf", 
+			"ITEMDATA", 
+			"Name=username", "Value={userName}", "ENDITEM", 
+			"Name=password", "Value={password}", "ENDITEM", 
+			"Name=login.x", "Value=45", "ENDITEM", 
+			"Name=login.y", "Value=13", "ENDITEM", 
+			"LAST");
 
 	lr_end_transaction("login",2);
 
 	
 	lr_start_transaction("ticketSearch");
 
-	web_image("Search Flights Button", 
-		"Alt=Search Flights Button", 
-		"Snapshot=t3.inf", 
-		"LAST");
+		web_image("Search Flights Button", 
+			"Alt=Search Flights Button", 
+			"Snapshot=t3.inf", 
+			"LAST");
+	
+		web_reg_find("Fail=NotFound",
+			"Search=Body",
+			"Text=Flight departing from",
+			"LAST");
 
-
-	web_submit_form("reservations.pl", 
-		"Snapshot=t4.inf", 
-		"ITEMDATA", 
-		"Name=depart", "Value=Denver", "ENDITEM", 
-		"Name=departDate", "Value=08/30/2022", "ENDITEM", 
-		"Name=arrive", "Value=Frankfurt", "ENDITEM", 
-		"Name=returnDate", "Value=08/31/2022", "ENDITEM", 
-		"Name=numPassengers", "Value=1", "ENDITEM", 
-		"Name=roundtrip", "Value=<OFF>", "ENDITEM", 
-		"Name=seatPref", "Value=Window", "ENDITEM", 
-		"Name=seatType", "Value=Business", "ENDITEM", 
-		"Name=findFlights.x", "Value=64", "ENDITEM", 
-		"Name=findFlights.y", "Value=11", "ENDITEM", 
-		"LAST");
+		web_submit_form("reservations.pl", 
+			"Snapshot=t4.inf", 
+			"ITEMDATA", 
+			"Name=depart", "Value={flightDestination}", "ENDITEM", 
+			"Name=departDate", "Value={departDate}", "ENDITEM", 
+			"Name=arrive", "Value={flightDestination}", "ENDITEM", 
+			"Name=returnDate", "Value={returnDate}", "ENDITEM", 
+			"Name=numPassengers", "Value=1", "ENDITEM", 
+			"Name=roundtrip", "Value=<OFF>", "ENDITEM", 
+			"Name=seatPref", "Value={seatPref}", "ENDITEM", 
+			"Name=seatType", "Value={seatType}", "ENDITEM", 
+			"Name=findFlights.x", "Value=64", "ENDITEM", 
+			"Name=findFlights.y", "Value=11", "ENDITEM", 
+			"LAST");
 
 	lr_end_transaction("ticketSearch",2);
 
 
 	lr_start_transaction("logout");
+	
+		web_reg_find("Fail=NotFound",
+				"Text/IC=A Session ID has been created and loaded into a cookie",
+				"LAST");
 
-	web_image("SignOff Button", 
-		"Alt=SignOff Button", 
-		"Snapshot=t5.inf", 
-		"LAST");
+		web_image("SignOff Button", 
+			"Alt=SignOff Button", 
+			"Snapshot=t5.inf", 
+			"LAST");
 
 	lr_end_transaction("logout",2);
+	
+	lr_end_transaction("02_TicketSearchWithoutBuying", 2);
 
 	return 0;
 }
-# 5 "c:\\users\\baldr\\onedrive\\\344\356\352\363\354\345\355\362\373\\vugen\\scripts\\02_ticketsearchwithoutbuying\\\\combined_02_TicketSearchWithoutBuying.c" 2
+# 5 "d:\\load testing xset\\load-testing-xset\\\361\352\360\350\357\362\373\\02_ticketsearchwithoutbuying\\\\combined_02_TicketSearchWithoutBuying.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "c:\\users\\baldr\\onedrive\\\344\356\352\363\354\345\355\362\373\\vugen\\scripts\\02_ticketsearchwithoutbuying\\\\combined_02_TicketSearchWithoutBuying.c" 2
+# 6 "d:\\load testing xset\\load-testing-xset\\\361\352\360\350\357\362\373\\02_ticketsearchwithoutbuying\\\\combined_02_TicketSearchWithoutBuying.c" 2
 

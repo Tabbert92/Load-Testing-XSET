@@ -48,7 +48,7 @@
     "IsWinInetMode": false,
     "MaxUsedConnections": 15,
     "RecordedBrowser": "Internet Explorer",
-    "RecordingDate": "авг-29-2022",
+    "RecordingDate": "Р В°Р Р†Р С–-29-2022",
     "RecordingDuration": 178890,
     "RecordingMode": "N/A",
     "RecordingTimeStamp": 1661771863,
@@ -406,5 +406,5 @@
     "IncludeInScript": false,
     "IsScriptIncludeWebSocket": false
   },
-  "NumberOfCorrelations": 2
+  "NumberOfCorrelations": 3
 }

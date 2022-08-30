@@ -2,8 +2,8 @@
 -DCCI
 -D_IDA_XL
 -DWINNT
--IC:\Users\baldr\OneDrive\Документы\VuGen\Scripts\02_TicketSearchWithoutBuying
+-ID:\Load Testing XSET\Load-Testing-XSET\Скрипты\02_TicketSearchWithoutBuying
 -ID:\Program Files (x86)\Micro Focus\LoadRunner\include
--ec:\users\baldr\onedrive\документы\vugen\scripts\02_ticketsearchwithoutbuying\\logfile.log
-c:\users\baldr\onedrive\документы\vugen\scripts\02_ticketsearchwithoutbuying\\combined_02_TicketSearchWithoutBuying.c
-c:\users\baldr\onedrive\документы\vugen\scripts\02_ticketsearchwithoutbuying\\pre_cci.c
+-ed:\load testing xset\load-testing-xset\скрипты\02_ticketsearchwithoutbuying\\logfile.log
+d:\load testing xset\load-testing-xset\скрипты\02_ticketsearchwithoutbuying\\combined_02_TicketSearchWithoutBuying.c
+d:\load testing xset\load-testing-xset\скрипты\02_ticketsearchwithoutbuying\\pre_cci.c

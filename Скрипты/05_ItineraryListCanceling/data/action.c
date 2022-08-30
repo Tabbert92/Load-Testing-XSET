@@ -6,59 +6,60 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=", 
-		"Snapshot=t1.inf", 
+		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		LAST);
 
-	lr_think_time(23);
+	lr_think_time(20);
 
 	lr_start_transaction("login");
 
 	web_submit_form("login.pl", 
-		"Snapshot=t2.inf", 
+		"Snapshot=t7.inf", 
 		ITEMDATA, 
 		"Name=username", "Value=jojo", ENDITEM, 
 		"Name=password", "Value=bean", ENDITEM, 
-		"Name=login.x", "Value=74", ENDITEM, 
-		"Name=login.y", "Value=11", ENDITEM, 
+		"Name=login.x", "Value=56", ENDITEM, 
+		"Name=login.y", "Value=10", ENDITEM, 
 		LAST);
 
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 
 	lr_end_transaction("login",LR_AUTO);
 
-	lr_think_time(23);
+	lr_think_time(8);
 
-	lr_start_transaction("ItineraryListBrowsing");
+	lr_start_transaction("ItineraryBrowsing");
 
 	web_image("Itinerary Button", 
 		"Alt=Itinerary Button", 
-		"Snapshot=t3.inf", 
+		"Snapshot=t8.inf", 
 		LAST);
 
-	lr_end_transaction("ItineraryListBrowsing",LR_AUTO);
+	lr_end_transaction("ItineraryBrowsing",LR_AUTO);
 
-	lr_think_time(28);
+	lr_think_time(26);
 
-	lr_start_transaction("ItineraryListCanceling");
+	lr_start_transaction("DelitingBooking");
 
 	web_submit_form("itinerary.pl", 
-		"Snapshot=t4.inf", 
+		"Snapshot=t9.inf", 
 		ITEMDATA, 
-		"Name=1", "Value=<OFF>", ENDITEM, 
-		"Name=removeAllFlights.x", "Value=52", ENDITEM, 
-		"Name=removeAllFlights.y", "Value=11", ENDITEM, 
+		"Name=1", "Value=on", ENDITEM, 
+		"Name=2", "Value=<OFF>", ENDITEM, 
+		"Name=removeFlights.x", "Value=61", ENDITEM, 
+		"Name=removeFlights.y", "Value=10", ENDITEM, 
 		LAST);
 
-	lr_end_transaction("ItineraryListCanceling",LR_AUTO);
+	lr_end_transaction("DelitingBooking",LR_AUTO);
 
-	lr_think_time(23);
+	lr_think_time(16);
 
 	lr_start_transaction("logout");
 
 	web_image("SignOff Button", 
 		"Alt=SignOff Button", 
-		"Snapshot=t5.inf", 
+		"Snapshot=t10.inf", 
 		LAST);
 
 	lr_end_transaction("logout",LR_AUTO);

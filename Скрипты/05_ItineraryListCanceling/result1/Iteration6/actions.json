@@ -1,0 +1,74 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP26",
+                "stepName": "Url: WebTours",
+                "infFile": "t1.inf",
+                "time": 1661876832605
+            },
+            {
+                "stepId": "STEP27",
+                "stepName": "Submit Form: login.pl",
+                "infFile": "t2.inf",
+                "time": 1661876832763
+            },
+            {
+                "stepId": "STEP28",
+                "stepName": "Image: Itinerary Button",
+                "infFile": "t3.inf",
+                "time": 1661876832920
+            },
+            {
+                "stepId": "STEP29",
+                "stepName": "Submit Form: itinerary.pl",
+                "infFile": "t4.inf",
+                "time": 1661876833025
+            },
+            {
+                "stepId": "STEP30",
+                "stepName": "Image: SignOff Button",
+                "infFile": "t5.inf",
+                "time": 1661876833164
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "login",
+                "rawStartTime": 1661876832629,
+                "rawEndTime": 1661876832774,
+                "thinkTime": 0.0,
+                "wastedTime": 0.016562461853027345
+            },
+            {
+                "transactionName": "ItineraryBrowsing",
+                "rawStartTime": 1661876832785,
+                "rawEndTime": 1661876832930,
+                "thinkTime": 0.0,
+                "wastedTime": 0.01679849624633789
+            },
+            {
+                "transactionName": "DelitingBooking",
+                "rawStartTime": 1661876832941,
+                "rawEndTime": 1661876833036,
+                "thinkTime": 0.0,
+                "wastedTime": 0.016588211059570314
+            },
+            {
+                "transactionName": "logout",
+                "rawStartTime": 1661876833047,
+                "rawEndTime": 1661876833175,
+                "thinkTime": 0.0,
+                "wastedTime": 0.01565861701965332
+            },
+            {
+                "transactionName": "05_IteneraryListCanseling",
+                "rawStartTime": 1661876832484,
+                "rawEndTime": 1661876833186,
+                "thinkTime": 0.0,
+                "wastedTime": 0.08293342590332031
+            }
+        ]
+    }
+]

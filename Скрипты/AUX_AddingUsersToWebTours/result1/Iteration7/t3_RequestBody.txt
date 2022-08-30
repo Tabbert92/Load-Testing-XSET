@@ -1,0 +1,2 @@
+"username=user06&password=12345&passwordConfirm=12345&firstName=first06&lastName=last06&address"
+"1=smt06&address2=000006&register.x=37&register.y=8"

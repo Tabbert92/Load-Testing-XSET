@@ -1,7 +1,7 @@
 [General]
 Type=Multi
 DefaultCfg=default.cfg
-ParameterFile=
+ParameterFile=05_ItineraryListCanceling.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 RunType=cci
@@ -52,7 +52,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="login__*delimiter*__ItineraryListBrowsing__*delimiter*__ItineraryListCanceling__*delimiter*__logout"
+Order="login__*delimiter*__ItineraryBrowsing__*delimiter*__DelitingBooking__*delimiter*__05_IteneraryListCanseling__*delimiter*__logout"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -60,6 +60,7 @@ LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
 login=
-ItineraryListBrowsing=
-ItineraryListCanceling=
+ItineraryBrowsing=
+DelitingBooking=
+05_IteneraryListCanseling=
 logout=

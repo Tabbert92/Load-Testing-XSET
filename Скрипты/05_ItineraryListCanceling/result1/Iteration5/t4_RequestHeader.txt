@@ -1,0 +1,12 @@
+POST /cgi-bin/itinerary.pl HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:1080/cgi-bin/itinerary.pl
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+Accept-Encoding: gzip, deflate
+Accept-Language: ru-RU
+Accept: */*
+Connection: Keep-Alive
+Host: localhost:1080
+Cookie: MSO=SID&1661876831; MTUserInfo=firstName&first04&address2&000004&username&user04&hash&52&lastName&last04%0A&address1&smt04&creditCard&&expDate&%0A
+Content-Length: 139
+

@@ -1,4 +1,4 @@
-# 1 "c:\\users\\baldr\\onedrive\\\344\356\352\363\354\345\355\362\373\\vugen\\scripts\\04_itinerarylistbrowsing\\\\combined_04_ItineraryListBrowsing.c"
+# 1 "d:\\load testing xset\\load-testing-xset\\\361\352\360\350\357\362\373\\04_itinerarylistbrowsing\\\\combined_04_ItineraryListBrowsing.c"
 # 1 "D:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -968,7 +968,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\users\\baldr\\onedrive\\\344\356\352\363\354\345\355\362\373\\vugen\\scripts\\04_itinerarylistbrowsing\\\\combined_04_ItineraryListBrowsing.c" 2
+# 1 "d:\\load testing xset\\load-testing-xset\\\361\352\360\350\357\362\373\\04_itinerarylistbrowsing\\\\combined_04_ItineraryListBrowsing.c" 2
 
 # 1 "D:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1136,7 +1136,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\users\\baldr\\onedrive\\\344\356\352\363\354\345\355\362\373\\vugen\\scripts\\04_itinerarylistbrowsing\\\\combined_04_ItineraryListBrowsing.c" 2
+# 2 "d:\\load testing xset\\load-testing-xset\\\361\352\360\350\357\362\373\\04_itinerarylistbrowsing\\\\combined_04_ItineraryListBrowsing.c" 2
 
 # 1 "globals.h" 1
 
@@ -2595,18 +2595,24 @@ void
 
 
 
-# 3 "c:\\users\\baldr\\onedrive\\\344\356\352\363\354\345\355\362\373\\vugen\\scripts\\04_itinerarylistbrowsing\\\\combined_04_ItineraryListBrowsing.c" 2
+# 3 "d:\\load testing xset\\load-testing-xset\\\361\352\360\350\357\362\373\\04_itinerarylistbrowsing\\\\combined_04_ItineraryListBrowsing.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "c:\\users\\baldr\\onedrive\\\344\356\352\363\354\345\355\362\373\\vugen\\scripts\\04_itinerarylistbrowsing\\\\combined_04_ItineraryListBrowsing.c" 2
+# 4 "d:\\load testing xset\\load-testing-xset\\\361\352\360\350\357\362\373\\04_itinerarylistbrowsing\\\\combined_04_ItineraryListBrowsing.c" 2
 
 # 1 "Action.c" 1
 Action()
 {
+
+	lr_start_transaction("04_ItineraryListBrowsing");
+	
+	web_reg_find("Fail=NotFound",
+			"Text/IC=A Session ID has been created and loaded into a cookie",
+			"LAST");
 
 	web_url("WebTours", 
 		"URL=http://localhost:1080/WebTours/", 
@@ -2617,50 +2623,65 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 	
+	web_set_sockets_option("SSL_VERSION", "AUTO");
+	
 	
 	lr_start_transaction("login");
+	
+		web_reg_find("Fail=NotFound",
+					"Text/IC=User password was correct",
+					"LAST");
 
-	web_submit_form("login.pl", 
-		"Snapshot=t4.inf", 
-		"ITEMDATA", 
-		"Name=username", "Value=jojo", "ENDITEM", 
-		"Name=password", "Value=bean", "ENDITEM", 
-		"Name=login.x", "Value=41", "ENDITEM", 
-		"Name=login.y", "Value=9", "ENDITEM", 
-		"LAST");
+		web_submit_form("login.pl", 
+			"Snapshot=t4.inf", 
+			"ITEMDATA", 
+			"Name=username", "Value={userName}", "ENDITEM", 
+			"Name=password", "Value={password}", "ENDITEM", 
+			"Name=login.x", "Value=41", "ENDITEM", 
+			"Name=login.y", "Value=9", "ENDITEM", 
+			"LAST");
 	
 	lr_end_transaction("login",2);
 
 
 	lr_start_transaction("ItineraryBrowsing");
+	
+		web_reg_find("Fail=NotFound",
+			"Text=Itinerary",
+			"LAST");
 
-	web_image("Itinerary Button", 
-		"Alt=Itinerary Button", 
-		"Snapshot=t5.inf", 
-		"LAST");
-
-	web_set_sockets_option("SSL_VERSION", "AUTO");
+		web_image("Itinerary Button", 
+			"Alt=Itinerary Button", 
+			"Snapshot=t5.inf", 
+			"LAST");
 
 	lr_end_transaction("ItineraryBrowsing",2);
 
 	
 	lr_start_transaction("logout");
+	
+		web_reg_find("Fail=NotFound",
+				"Text/IC=A Session ID has been created and loaded into a cookie",
+				"LAST");
 
-	web_image("SignOff Button", 
-		"Alt=SignOff Button", 
-		"Snapshot=t6.inf", 
-		"LAST");
+		web_image("SignOff Button", 
+			"Alt=SignOff Button", 
+			"Snapshot=t6.inf", 
+			"LAST");
 
 	lr_end_transaction("logout",2);
-
+	
+	lr_end_transaction("04_ItineraryListBrowsing", 2);
+	
 	return 0;
+
 }
-# 5 "c:\\users\\baldr\\onedrive\\\344\356\352\363\354\345\355\362\373\\vugen\\scripts\\04_itinerarylistbrowsing\\\\combined_04_ItineraryListBrowsing.c" 2
+# 5 "d:\\load testing xset\\load-testing-xset\\\361\352\360\350\357\362\373\\04_itinerarylistbrowsing\\\\combined_04_ItineraryListBrowsing.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "c:\\users\\baldr\\onedrive\\\344\356\352\363\354\345\355\362\373\\vugen\\scripts\\04_itinerarylistbrowsing\\\\combined_04_ItineraryListBrowsing.c" 2
+# 6 "d:\\load testing xset\\load-testing-xset\\\361\352\360\350\357\362\373\\04_itinerarylistbrowsing\\\\combined_04_ItineraryListBrowsing.c" 2
 

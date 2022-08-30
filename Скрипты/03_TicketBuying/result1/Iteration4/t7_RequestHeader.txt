@@ -1,0 +1,10 @@
+GET /cgi-bin/welcome.pl?signOff=1 HTTP/1.1
+Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+Accept-Encoding: gzip, deflate
+Accept-Language: ru-RU
+Accept: */*
+Connection: Keep-Alive
+Host: localhost:1080
+Cookie: MSO=SID&1661873891; MTUserInfo=firstName&first03&username&user03&address2&000003&hash&51&address1&smt03&lastName&last03%0A
+

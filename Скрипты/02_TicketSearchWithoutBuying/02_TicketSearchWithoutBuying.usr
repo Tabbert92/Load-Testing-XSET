@@ -1,7 +1,7 @@
 [General]
 Type=Multi
 DefaultCfg=default.cfg
-ParameterFile=
+ParameterFile=02_TicketSearchWithoutBuying.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 RunType=cci
@@ -52,7 +52,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="login__*delimiter*__ticketSearch__*delimiter*__logout"
+Order="login__*delimiter*__ticketSearch__*delimiter*__logout__*delimiter*__02_TicketSearchWithoutBuying"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -62,3 +62,4 @@ ActiveRunName=result1
 login=
 ticketSearch=
 logout=
+02_TicketSearchWithoutBuying=

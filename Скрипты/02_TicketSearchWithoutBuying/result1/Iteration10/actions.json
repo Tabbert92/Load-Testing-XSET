@@ -1,0 +1,67 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP46",
+                "stepName": "Url: WebTours",
+                "infFile": "t1.inf",
+                "time": 1661871873975
+            },
+            {
+                "stepId": "STEP47",
+                "stepName": "Submit Form: login.pl",
+                "infFile": "t2.inf",
+                "time": 1661871874144
+            },
+            {
+                "stepId": "STEP48",
+                "stepName": "Image: Search Flights Button",
+                "infFile": "t3.inf",
+                "time": 1661871874328
+            },
+            {
+                "stepId": "STEP49",
+                "stepName": "Submit Form: reservations.pl",
+                "infFile": "t4.inf",
+                "time": 1661871874433
+            },
+            {
+                "stepId": "STEP50",
+                "stepName": "Image: SignOff Button",
+                "infFile": "t5.inf",
+                "time": 1661871874586
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "login",
+                "rawStartTime": 1661871873998,
+                "rawEndTime": 1661871874155,
+                "thinkTime": 0.0,
+                "wastedTime": 0.027948379516601564
+            },
+            {
+                "transactionName": "ticketSearch",
+                "rawStartTime": 1661871874166,
+                "rawEndTime": 1661871874443,
+                "thinkTime": 0.0,
+                "wastedTime": 0.05471515655517578
+            },
+            {
+                "transactionName": "logout",
+                "rawStartTime": 1661871874454,
+                "rawEndTime": 1661871874597,
+                "thinkTime": 0.0,
+                "wastedTime": 0.026822805404663087
+            },
+            {
+                "transactionName": "02_TicketSearchWithoutBuying",
+                "rawStartTime": 1661871873850,
+                "rawEndTime": 1661871874608,
+                "thinkTime": 0.0,
+                "wastedTime": 0.13677382469177247
+            }
+        ]
+    }
+]

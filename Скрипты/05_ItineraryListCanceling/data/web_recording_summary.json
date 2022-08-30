@@ -46,15 +46,15 @@
   "GeneralInfo": {
     "BrowserVersion": "",
     "IsWinInetMode": false,
-    "MaxUsedConnections": 13,
+    "MaxUsedConnections": 12,
     "RecordedBrowser": "Internet Explorer",
     "RecordingDate": "авг-29-2022",
-    "RecordingDuration": 133250,
+    "RecordingDuration": 131937,
     "RecordingMode": "N/A",
     "RecordingTimeStamp": 1661773189,
     "RecordingType": "Browser",
-    "TotalBytesReceived": 26797,
-    "TotalBytesSent": 12099,
+    "TotalBytesReceived": 29707,
+    "TotalBytesSent": 12134,
     "TotalRequests": 27,
     "UserAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
   },
@@ -72,15 +72,75 @@
             {
               "CompressionType": "gzip",
               "DataType": "text/xml",
-              "DownloadTime": 532,
-              "EventId": 6529,
+              "DownloadTime": 63,
+              "EventId": 19476,
               "HttpStatus": 200,
               "Size": 25688,
-              "URL": "https://iecvlist.microsoft.com/IE11/1478281996/iecompatviewlist.xml"
+              "URL": "https://iecvlist.microsoft.com/IE11/1478281996/iecompatviewlist.xml?cvlp=5359573147223906690"
             }
           ],
           "SSLCipher": "TLS_AES_256_GCM_SHA384",
           "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "88.221.39.148",
+          "IncludeInScript": false,
+          "Name": "go.microsoft.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 31,
+              "EventId": 31633,
+              "HttpStatus": 302,
+              "Size": 0,
+              "URL": "https://go.microsoft.com/fwlink/?linkid=2133855&bucket=69&customertype=1"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "204.79.197.239",
+          "IncludeInScript": false,
+          "Name": "edge.microsoft.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/xml",
+              "DownloadTime": 78,
+              "EventId": 31649,
+              "HttpStatus": 200,
+              "Size": 730903,
+              "URL": "https://edge.microsoft.com/neededge/v1?bucket=69&customertype=1"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES256-GCM-SHA384",
+          "SSLVersion": "TLS1.2"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "20.82.250.189",
+          "IncludeInScript": false,
+          "Name": "c.urs.microsoft.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/octet-stream",
+              "DownloadTime": 63,
+              "EventId": 9280,
+              "HttpStatus": 200,
+              "Size": 10805,
+              "URL": "https://c.urs.microsoft.com/l1.dat?cw=637973956413799522&v=3&cv=9.11.19041.0&os=10.0.19044.0.0&pg=4A72F430-B40C-4D36-A068-CE33ADA5ADF9"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES256-GCM-SHA384",
+          "SSLVersion": "TLS1.2"
         }
       ],
       "IncludeInScript": true
@@ -98,17 +158,17 @@
             {
               "CompressionType": "",
               "DataType": "text/html",
-              "DownloadTime": 46,
-              "EventId": 9180,
+              "DownloadTime": 47,
+              "EventId": 31715,
               "HttpStatus": 200,
-              "Size": 1486,
+              "Size": 1490,
               "URL": "http://localhost:1080/cgi-bin/nav.pl?in=home"
             },
             {
               "CompressionType": "",
               "DataType": "",
               "DownloadTime": 0,
-              "EventId": 9178,
+              "EventId": 31713,
               "HttpStatus": 304,
               "Size": 0,
               "URL": "http://localhost:1080/WebTours/home.html"
@@ -116,8 +176,8 @@
             {
               "CompressionType": "",
               "DataType": "text/html",
-              "DownloadTime": 47,
-              "EventId": 9175,
+              "DownloadTime": 31,
+              "EventId": 31710,
               "HttpStatus": 200,
               "Size": 686,
               "URL": "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"
@@ -125,17 +185,17 @@
             {
               "CompressionType": "",
               "DataType": "text/html",
-              "DownloadTime": 31,
-              "EventId": 9166,
+              "DownloadTime": 32,
+              "EventId": 31701,
               "HttpStatus": 200,
-              "Size": 887,
+              "Size": 2606,
               "URL": "http://localhost:1080/cgi-bin/itinerary.pl"
             },
             {
               "CompressionType": "",
               "DataType": "image/gif",
-              "DownloadTime": 47,
-              "EventId": 9155,
+              "DownloadTime": 0,
+              "EventId": 28573,
               "HttpStatus": 200,
               "Size": 742,
               "URL": "http://localhost:1080/WebTours/images/cancelallreservations.gif"
@@ -143,8 +203,8 @@
             {
               "CompressionType": "",
               "DataType": "image/gif",
-              "DownloadTime": 47,
-              "EventId": 9153,
+              "DownloadTime": 16,
+              "EventId": 28561,
               "HttpStatus": 200,
               "Size": 831,
               "URL": "http://localhost:1080/WebTours/images/cancelreservation.gif"
@@ -152,8 +212,8 @@
             {
               "CompressionType": "",
               "DataType": "image/gif",
-              "DownloadTime": 0,
-              "EventId": 9151,
+              "DownloadTime": 31,
+              "EventId": 28553,
               "HttpStatus": 200,
               "Size": 688,
               "URL": "http://localhost:1080/WebTours/images/home.gif"
@@ -161,8 +221,8 @@
             {
               "CompressionType": "",
               "DataType": "image/gif",
-              "DownloadTime": 0,
-              "EventId": 9149,
+              "DownloadTime": 32,
+              "EventId": 28545,
               "HttpStatus": 200,
               "Size": 733,
               "URL": "http://localhost:1080/WebTours/images/in_itinerary.gif"
@@ -170,8 +230,17 @@
             {
               "CompressionType": "",
               "DataType": "text/html",
-              "DownloadTime": 62,
-              "EventId": 9141,
+              "DownloadTime": 47,
+              "EventId": 28508,
+              "HttpStatus": 200,
+              "Size": 3799,
+              "URL": "http://localhost:1080/cgi-bin/itinerary.pl"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 47,
+              "EventId": 28500,
               "HttpStatus": 200,
               "Size": 1482,
               "URL": "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"
@@ -179,17 +248,8 @@
             {
               "CompressionType": "",
               "DataType": "text/html",
-              "DownloadTime": 46,
-              "EventId": 9137,
-              "HttpStatus": 200,
-              "Size": 2604,
-              "URL": "http://localhost:1080/cgi-bin/itinerary.pl"
-            },
-            {
-              "CompressionType": "",
-              "DataType": "text/html",
-              "DownloadTime": 31,
-              "EventId": 9134,
+              "DownloadTime": 47,
+              "EventId": 28453,
               "HttpStatus": 200,
               "Size": 591,
               "URL": "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"
@@ -197,35 +257,17 @@
             {
               "CompressionType": "",
               "DataType": "image/gif",
-              "DownloadTime": 47,
-              "EventId": 64,
+              "DownloadTime": 46,
+              "EventId": 9244,
               "HttpStatus": 200,
               "Size": 726,
               "URL": "http://localhost:1080/WebTours/images/flights.gif"
             },
             {
               "CompressionType": "",
-              "DataType": "text/html",
+              "DataType": "image/gif",
               "DownloadTime": 31,
-              "EventId": 61,
-              "HttpStatus": 200,
-              "Size": 918,
-              "URL": "http://localhost:1080/cgi-bin/login.pl?intro=true"
-            },
-            {
-              "CompressionType": "",
-              "DataType": "image/gif",
-              "DownloadTime": 15,
-              "EventId": 59,
-              "HttpStatus": 200,
-              "Size": 751,
-              "URL": "http://localhost:1080/WebTours/images/signoff.gif"
-            },
-            {
-              "CompressionType": "",
-              "DataType": "image/gif",
-              "DownloadTime": 15,
-              "EventId": 57,
+              "EventId": 9242,
               "HttpStatus": 200,
               "Size": 733,
               "URL": "http://localhost:1080/WebTours/images/itinerary.gif"
@@ -234,7 +276,16 @@
               "CompressionType": "",
               "DataType": "image/gif",
               "DownloadTime": 0,
-              "EventId": 55,
+              "EventId": 9240,
+              "HttpStatus": 200,
+              "Size": 751,
+              "URL": "http://localhost:1080/WebTours/images/signoff.gif"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 0,
+              "EventId": 9238,
               "HttpStatus": 200,
               "Size": 688,
               "URL": "http://localhost:1080/WebTours/images/in_home.gif"
@@ -243,7 +294,7 @@
               "CompressionType": "",
               "DataType": "text/html",
               "DownloadTime": 63,
-              "EventId": 46,
+              "EventId": 9231,
               "HttpStatus": 200,
               "Size": 1482,
               "URL": "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"
@@ -251,8 +302,17 @@
             {
               "CompressionType": "",
               "DataType": "text/html",
-              "DownloadTime": 47,
-              "EventId": 41,
+              "DownloadTime": 31,
+              "EventId": 9228,
+              "HttpStatus": 200,
+              "Size": 918,
+              "URL": "http://localhost:1080/cgi-bin/login.pl?intro=true"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 46,
+              "EventId": 9225,
               "HttpStatus": 200,
               "Size": 481,
               "URL": "http://localhost:1080/cgi-bin/login.pl"
@@ -261,7 +321,7 @@
               "CompressionType": "",
               "DataType": "text/html",
               "DownloadTime": 0,
-              "EventId": 31,
+              "EventId": 9215,
               "HttpStatus": 404,
               "Size": 209,
               "URL": "http://localhost:1080/favicon.ico"
@@ -270,7 +330,7 @@
               "CompressionType": "",
               "DataType": "image/gif",
               "DownloadTime": 47,
-              "EventId": 29,
+              "EventId": 9213,
               "HttpStatus": 200,
               "Size": 679,
               "URL": "http://localhost:1080/WebTours/images/mer_login.gif"
@@ -279,16 +339,16 @@
               "CompressionType": "",
               "DataType": "text/html",
               "DownloadTime": 47,
-              "EventId": 26,
+              "EventId": 9210,
               "HttpStatus": 200,
-              "Size": 1489,
+              "Size": 1481,
               "URL": "http://localhost:1080/cgi-bin/nav.pl?in=home"
             },
             {
               "CompressionType": "",
               "DataType": "text/html",
-              "DownloadTime": 0,
-              "EventId": 24,
+              "DownloadTime": 16,
+              "EventId": 9205,
               "HttpStatus": 200,
               "Size": 1361,
               "URL": "http://localhost:1080/WebTours/home.html"
@@ -296,8 +356,8 @@
             {
               "CompressionType": "",
               "DataType": "image/png",
-              "DownloadTime": 0,
-              "EventId": 22,
+              "DownloadTime": 16,
+              "EventId": 9202,
               "HttpStatus": 200,
               "Size": 4187,
               "URL": "http://localhost:1080/WebTours/images/webtours.png"
@@ -305,8 +365,8 @@
             {
               "CompressionType": "",
               "DataType": "image/png",
-              "DownloadTime": 0,
-              "EventId": 20,
+              "DownloadTime": 16,
+              "EventId": 9200,
               "HttpStatus": 200,
               "Size": 601,
               "URL": "http://localhost:1080/WebTours/images/hp_logo.png"
@@ -315,7 +375,7 @@
               "CompressionType": "",
               "DataType": "text/html",
               "DownloadTime": 31,
-              "EventId": 17,
+              "EventId": 9197,
               "HttpStatus": 200,
               "Size": 686,
               "URL": "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"
@@ -324,7 +384,7 @@
               "CompressionType": "",
               "DataType": "text/html",
               "DownloadTime": 0,
-              "EventId": 15,
+              "EventId": 9195,
               "HttpStatus": 200,
               "Size": 710,
               "URL": "http://localhost:1080/WebTours/header.html"
@@ -333,7 +393,7 @@
               "CompressionType": "",
               "DataType": "text/html",
               "DownloadTime": 0,
-              "EventId": 13,
+              "EventId": 9193,
               "HttpStatus": 200,
               "Size": 366,
               "URL": "http://localhost:1080/WebTours/"

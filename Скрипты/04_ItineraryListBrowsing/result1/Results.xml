@@ -129,13 +129,13 @@
 ]
 >
 <Report ver="2.0" tmZone="RTZ 2 (зима)">
-<General productName="Vugen" productVer="2021" os="" host="DESKTOP-BQSH10A"><DocLocation><![CDATA[C:\Users\baldr\OneDrive\Документы\VuGen\Scripts\04_ItineraryListBrowsing]]></DocLocation></General>
+<General productName="Vugen" productVer="2021" os="" host="DESKTOP-BQSH10A"><DocLocation><![CDATA[D:\Load Testing XSET\Load-Testing-XSET\Скрипты\04_ItineraryListBrowsing]]></DocLocation></General>
 <Doc rID="T1"   productName= "Vugen"  >
 <DName><![CDATA[04_ItineraryListBrowsing]]></DName>
 <Res><![CDATA[result1]]></Res>
 <Action rID="T2">
 <AName><![CDATA[vuser_init]]></AName>
-<Summary sTime="29.08.2022 - 14:38:23" eTime="29.08.2022 - 14:38:23" passed="0" failed="0" warnings="0" ></Summary>
+<Summary sTime="30.08.2022 - 19:03:51" eTime="30.08.2022 - 19:03:51" passed="0" failed="0" warnings="0" ></Summary>
 <NodeArgs eType="StartAction" icon="2" nRep="5" >
 <Disp><![CDATA[vuser_init Summary]]></Disp>
 </NodeArgs>
@@ -144,63 +144,99 @@
 <Action rID="T4">
 <AName><![CDATA[Action]]></AName>
 <Step rID="T5">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:51]]></Time>
+<TimeTick>1661875431</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="9" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T6">
 <Obj plainTxt="False" ><![CDATA[Url: WebTours]]></Obj>
 <Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
-<Time><![CDATA[29.08.2022 - 14:38:23]]></Time>
-<TimeTick>1661773103</TimeTick>
-<NodeArgs eType="General" icon="4" nRep="9" status="Passed" >
+<Time><![CDATA[30.08.2022 - 19:03:52]]></Time>
+<TimeTick>1661875432</TimeTick>
+<NodeArgs eType="General" icon="5" nRep="10" status="Passed" >
 <Disp><![CDATA[Url: WebTours]]></Disp>
 <BtmPane vType="HTMLSNSH" >
 <Path><![CDATA[\Iteration1\t1.inf]]></Path>
 </BtmPane>
 </NodeArgs>
 </Step>
-<Step rID="T6">
+<Step rID="T7">
+<Obj plainTxt="False" ><![CDATA[Service: Set Sockets Option]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Set socket option <STRONG><FONT COLOR=#00AF00>SSL_VERSION</FONT></STRONG> with value <STRONG><FONT COLOR=#00AF00>AUTO</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:52]]></Time>
+<TimeTick>1661875432</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="11" >
+<Disp><![CDATA[Service: Set Sockets Option]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T8">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=User password was correct</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:52]]></Time>
+<TimeTick>1661875432</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="12" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T9">
 <Obj plainTxt="False" ><![CDATA[Submit Form: login.pl]]></Obj>
 <Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
-<Time><![CDATA[29.08.2022 - 14:38:23]]></Time>
-<TimeTick>1661773103</TimeTick>
-<NodeArgs eType="General" icon="5" nRep="10" status="Passed" >
+<Time><![CDATA[30.08.2022 - 19:03:52]]></Time>
+<TimeTick>1661875432</TimeTick>
+<NodeArgs eType="General" icon="7" nRep="13" status="Passed" >
 <Disp><![CDATA[Submit Form: login.pl]]></Disp>
 <BtmPane vType="HTMLSNSH" >
 <Path><![CDATA[\Iteration1\t2.inf]]></Path>
 </BtmPane>
 </NodeArgs>
 </Step>
-<Step rID="T7">
+<Step rID="T10">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text=Itinerary</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:52]]></Time>
+<TimeTick>1661875432</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="14" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T11">
 <Obj plainTxt="False" ><![CDATA[Image: Itinerary Button]]></Obj>
 <Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
-<Time><![CDATA[29.08.2022 - 14:38:24]]></Time>
-<TimeTick>1661773104</TimeTick>
-<NodeArgs eType="General" icon="6" nRep="11" status="Passed" >
+<Time><![CDATA[30.08.2022 - 19:03:52]]></Time>
+<TimeTick>1661875432</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="15" status="Passed" >
 <Disp><![CDATA[Image: Itinerary Button]]></Disp>
 <BtmPane vType="HTMLSNSH" >
 <Path><![CDATA[\Iteration1\t3.inf]]></Path>
 </BtmPane>
 </NodeArgs>
 </Step>
-<Step rID="T8">
-<Obj plainTxt="False" ><![CDATA[Service: Set Sockets Option]]></Obj>
-<Details plainTxt="False" ><![CDATA[<CENTER>Set socket option <STRONG><FONT COLOR=#00AF00>SSL_VERSION</FONT></STRONG> with value <STRONG><FONT COLOR=#00AF00>AUTO</FONT></STRONG></CENTER>]]></Details>
-<Time><![CDATA[29.08.2022 - 14:38:24]]></Time>
-<TimeTick>1661773104</TimeTick>
-<NodeArgs eType="General" icon="7" nRep="12" >
-<Disp><![CDATA[Service: Set Sockets Option]]></Disp>
+<Step rID="T12">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:52]]></Time>
+<TimeTick>1661875432</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="16" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
 </NodeArgs>
 </Step>
-<Step rID="T9">
+<Step rID="T13">
 <Obj plainTxt="False" ><![CDATA[Image: SignOff Button]]></Obj>
 <Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
-<Time><![CDATA[29.08.2022 - 14:38:24]]></Time>
-<TimeTick>1661773104</TimeTick>
-<NodeArgs eType="General" icon="6" nRep="13" status="Passed" >
+<Time><![CDATA[30.08.2022 - 19:03:52]]></Time>
+<TimeTick>1661875432</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="17" status="Passed" >
 <Disp><![CDATA[Image: SignOff Button]]></Disp>
 <BtmPane vType="HTMLSNSH" >
 <Path><![CDATA[\Iteration1\t4.inf]]></Path>
 </BtmPane>
 </NodeArgs>
 </Step>
-<Summary sTime="29.08.2022 - 14:38:23" eTime="29.08.2022 - 14:38:24" passed="4" failed="0" warnings="0" ></Summary>
+<Summary sTime="30.08.2022 - 19:03:51" eTime="30.08.2022 - 19:03:52" passed="4" failed="0" warnings="0" ></Summary>
 <NodeArgs eType="StartAction" icon="2" nRep="8" status="Passed" >
 <Disp><![CDATA[Action Summary]]></Disp>
 </NodeArgs>
@@ -209,14 +245,959 @@
 <Disp><![CDATA[04_ItineraryListBrowsing Iteration 1 (Row 1)]]></Disp>
 </NodeArgs>
 </DIter>
-<Action rID="T10">
+<DIter rID="T14" iterID="2" >
+<Action rID="T15">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T16">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:52]]></Time>
+<TimeTick>1661875432</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="22" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T17">
+<Obj plainTxt="False" ><![CDATA[Url: WebTours]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:52]]></Time>
+<TimeTick>1661875432</TimeTick>
+<NodeArgs eType="General" icon="5" nRep="23" status="Passed" >
+<Disp><![CDATA[Url: WebTours]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration2\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T18">
+<Obj plainTxt="False" ><![CDATA[Service: Set Sockets Option]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Set socket option <STRONG><FONT COLOR=#00AF00>SSL_VERSION</FONT></STRONG> with value <STRONG><FONT COLOR=#00AF00>AUTO</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:52]]></Time>
+<TimeTick>1661875432</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="24" >
+<Disp><![CDATA[Service: Set Sockets Option]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T19">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=User password was correct</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:52]]></Time>
+<TimeTick>1661875432</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="25" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T20">
+<Obj plainTxt="False" ><![CDATA[Submit Form: login.pl]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:52]]></Time>
+<TimeTick>1661875432</TimeTick>
+<NodeArgs eType="General" icon="7" nRep="26" status="Passed" >
+<Disp><![CDATA[Submit Form: login.pl]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration2\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T21">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text=Itinerary</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:52]]></Time>
+<TimeTick>1661875432</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="27" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T22">
+<Obj plainTxt="False" ><![CDATA[Image: Itinerary Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:53]]></Time>
+<TimeTick>1661875433</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="28" status="Passed" >
+<Disp><![CDATA[Image: Itinerary Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration2\t3.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T23">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:53]]></Time>
+<TimeTick>1661875433</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="29" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T24">
+<Obj plainTxt="False" ><![CDATA[Image: SignOff Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:53]]></Time>
+<TimeTick>1661875433</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="30" status="Passed" >
+<Disp><![CDATA[Image: SignOff Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration2\t4.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="30.08.2022 - 19:03:52" eTime="30.08.2022 - 19:03:53" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="21" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="20" status="Passed" >
+<Disp><![CDATA[04_ItineraryListBrowsing Iteration 2 (Row 2)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T25" iterID="3" >
+<Action rID="T26">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T27">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:53]]></Time>
+<TimeTick>1661875433</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="35" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T28">
+<Obj plainTxt="False" ><![CDATA[Url: WebTours]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:53]]></Time>
+<TimeTick>1661875433</TimeTick>
+<NodeArgs eType="General" icon="5" nRep="36" status="Passed" >
+<Disp><![CDATA[Url: WebTours]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration3\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T29">
+<Obj plainTxt="False" ><![CDATA[Service: Set Sockets Option]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Set socket option <STRONG><FONT COLOR=#00AF00>SSL_VERSION</FONT></STRONG> with value <STRONG><FONT COLOR=#00AF00>AUTO</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:53]]></Time>
+<TimeTick>1661875433</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="37" >
+<Disp><![CDATA[Service: Set Sockets Option]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T30">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=User password was correct</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:53]]></Time>
+<TimeTick>1661875433</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="38" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T31">
+<Obj plainTxt="False" ><![CDATA[Submit Form: login.pl]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:53]]></Time>
+<TimeTick>1661875433</TimeTick>
+<NodeArgs eType="General" icon="7" nRep="39" status="Passed" >
+<Disp><![CDATA[Submit Form: login.pl]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration3\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T32">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text=Itinerary</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:53]]></Time>
+<TimeTick>1661875433</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="40" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T33">
+<Obj plainTxt="False" ><![CDATA[Image: Itinerary Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:53]]></Time>
+<TimeTick>1661875433</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="41" status="Passed" >
+<Disp><![CDATA[Image: Itinerary Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration3\t3.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T34">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:53]]></Time>
+<TimeTick>1661875433</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="42" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T35">
+<Obj plainTxt="False" ><![CDATA[Image: SignOff Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:53]]></Time>
+<TimeTick>1661875433</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="43" status="Passed" >
+<Disp><![CDATA[Image: SignOff Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration3\t4.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="30.08.2022 - 19:03:53" eTime="30.08.2022 - 19:03:53" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="34" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="33" status="Passed" >
+<Disp><![CDATA[04_ItineraryListBrowsing Iteration 3 (Row 3)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T36" iterID="4" >
+<Action rID="T37">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T38">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:53]]></Time>
+<TimeTick>1661875433</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="48" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T39">
+<Obj plainTxt="False" ><![CDATA[Url: WebTours]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="5" nRep="49" status="Passed" >
+<Disp><![CDATA[Url: WebTours]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration4\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T40">
+<Obj plainTxt="False" ><![CDATA[Service: Set Sockets Option]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Set socket option <STRONG><FONT COLOR=#00AF00>SSL_VERSION</FONT></STRONG> with value <STRONG><FONT COLOR=#00AF00>AUTO</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="50" >
+<Disp><![CDATA[Service: Set Sockets Option]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T41">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=User password was correct</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="51" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T42">
+<Obj plainTxt="False" ><![CDATA[Submit Form: login.pl]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="7" nRep="52" status="Passed" >
+<Disp><![CDATA[Submit Form: login.pl]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration4\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T43">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text=Itinerary</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="53" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T44">
+<Obj plainTxt="False" ><![CDATA[Image: Itinerary Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="54" status="Passed" >
+<Disp><![CDATA[Image: Itinerary Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration4\t3.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T45">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="55" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T46">
+<Obj plainTxt="False" ><![CDATA[Image: SignOff Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="56" status="Passed" >
+<Disp><![CDATA[Image: SignOff Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration4\t4.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="30.08.2022 - 19:03:53" eTime="30.08.2022 - 19:03:54" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="47" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="46" status="Passed" >
+<Disp><![CDATA[04_ItineraryListBrowsing Iteration 4 (Row 4)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T47" iterID="5" >
+<Action rID="T48">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T49">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="61" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T50">
+<Obj plainTxt="False" ><![CDATA[Url: WebTours]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="5" nRep="62" status="Passed" >
+<Disp><![CDATA[Url: WebTours]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration5\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T51">
+<Obj plainTxt="False" ><![CDATA[Service: Set Sockets Option]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Set socket option <STRONG><FONT COLOR=#00AF00>SSL_VERSION</FONT></STRONG> with value <STRONG><FONT COLOR=#00AF00>AUTO</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="63" >
+<Disp><![CDATA[Service: Set Sockets Option]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T52">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=User password was correct</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="64" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T53">
+<Obj plainTxt="False" ><![CDATA[Submit Form: login.pl]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="7" nRep="65" status="Passed" >
+<Disp><![CDATA[Submit Form: login.pl]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration5\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T54">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text=Itinerary</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="66" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T55">
+<Obj plainTxt="False" ><![CDATA[Image: Itinerary Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:54]]></Time>
+<TimeTick>1661875434</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="67" status="Passed" >
+<Disp><![CDATA[Image: Itinerary Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration5\t3.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T56">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="68" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T57">
+<Obj plainTxt="False" ><![CDATA[Image: SignOff Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="69" status="Passed" >
+<Disp><![CDATA[Image: SignOff Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration5\t4.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="30.08.2022 - 19:03:54" eTime="30.08.2022 - 19:03:55" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="60" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="59" status="Passed" >
+<Disp><![CDATA[04_ItineraryListBrowsing Iteration 5 (Row 5)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T58" iterID="6" >
+<Action rID="T59">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T60">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="74" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T61">
+<Obj plainTxt="False" ><![CDATA[Url: WebTours]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="5" nRep="75" status="Passed" >
+<Disp><![CDATA[Url: WebTours]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration6\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T62">
+<Obj plainTxt="False" ><![CDATA[Service: Set Sockets Option]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Set socket option <STRONG><FONT COLOR=#00AF00>SSL_VERSION</FONT></STRONG> with value <STRONG><FONT COLOR=#00AF00>AUTO</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="76" >
+<Disp><![CDATA[Service: Set Sockets Option]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T63">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=User password was correct</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="77" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T64">
+<Obj plainTxt="False" ><![CDATA[Submit Form: login.pl]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="7" nRep="78" status="Passed" >
+<Disp><![CDATA[Submit Form: login.pl]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration6\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T65">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text=Itinerary</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="79" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T66">
+<Obj plainTxt="False" ><![CDATA[Image: Itinerary Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="80" status="Passed" >
+<Disp><![CDATA[Image: Itinerary Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration6\t3.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T67">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="81" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T68">
+<Obj plainTxt="False" ><![CDATA[Image: SignOff Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="82" status="Passed" >
+<Disp><![CDATA[Image: SignOff Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration6\t4.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="30.08.2022 - 19:03:55" eTime="30.08.2022 - 19:03:55" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="73" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="72" status="Passed" >
+<Disp><![CDATA[04_ItineraryListBrowsing Iteration 6 (Row 6)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T69" iterID="7" >
+<Action rID="T70">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T71">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="87" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T72">
+<Obj plainTxt="False" ><![CDATA[Url: WebTours]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="5" nRep="88" status="Passed" >
+<Disp><![CDATA[Url: WebTours]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration7\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T73">
+<Obj plainTxt="False" ><![CDATA[Service: Set Sockets Option]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Set socket option <STRONG><FONT COLOR=#00AF00>SSL_VERSION</FONT></STRONG> with value <STRONG><FONT COLOR=#00AF00>AUTO</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="89" >
+<Disp><![CDATA[Service: Set Sockets Option]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T74">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=User password was correct</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:55]]></Time>
+<TimeTick>1661875435</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="90" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T75">
+<Obj plainTxt="False" ><![CDATA[Submit Form: login.pl]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:56]]></Time>
+<TimeTick>1661875436</TimeTick>
+<NodeArgs eType="General" icon="7" nRep="91" status="Passed" >
+<Disp><![CDATA[Submit Form: login.pl]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration7\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T76">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text=Itinerary</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:56]]></Time>
+<TimeTick>1661875436</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="92" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T77">
+<Obj plainTxt="False" ><![CDATA[Image: Itinerary Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:56]]></Time>
+<TimeTick>1661875436</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="93" status="Passed" >
+<Disp><![CDATA[Image: Itinerary Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration7\t3.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T78">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:56]]></Time>
+<TimeTick>1661875436</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="94" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T79">
+<Obj plainTxt="False" ><![CDATA[Image: SignOff Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:56]]></Time>
+<TimeTick>1661875436</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="95" status="Passed" >
+<Disp><![CDATA[Image: SignOff Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration7\t4.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="30.08.2022 - 19:03:55" eTime="30.08.2022 - 19:03:56" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="86" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="85" status="Passed" >
+<Disp><![CDATA[04_ItineraryListBrowsing Iteration 7 (Row 7)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T80" iterID="8" >
+<Action rID="T81">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T82">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:56]]></Time>
+<TimeTick>1661875436</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="100" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T83">
+<Obj plainTxt="False" ><![CDATA[Url: WebTours]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:56]]></Time>
+<TimeTick>1661875436</TimeTick>
+<NodeArgs eType="General" icon="5" nRep="101" status="Passed" >
+<Disp><![CDATA[Url: WebTours]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration8\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T84">
+<Obj plainTxt="False" ><![CDATA[Service: Set Sockets Option]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Set socket option <STRONG><FONT COLOR=#00AF00>SSL_VERSION</FONT></STRONG> with value <STRONG><FONT COLOR=#00AF00>AUTO</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:56]]></Time>
+<TimeTick>1661875436</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="102" >
+<Disp><![CDATA[Service: Set Sockets Option]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T85">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=User password was correct</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:56]]></Time>
+<TimeTick>1661875436</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="103" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T86">
+<Obj plainTxt="False" ><![CDATA[Submit Form: login.pl]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:56]]></Time>
+<TimeTick>1661875436</TimeTick>
+<NodeArgs eType="General" icon="7" nRep="104" status="Passed" >
+<Disp><![CDATA[Submit Form: login.pl]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration8\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T87">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text=Itinerary</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:56]]></Time>
+<TimeTick>1661875436</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="105" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T88">
+<Obj plainTxt="False" ><![CDATA[Image: Itinerary Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:56]]></Time>
+<TimeTick>1661875436</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="106" status="Passed" >
+<Disp><![CDATA[Image: Itinerary Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration8\t3.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T89">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:56]]></Time>
+<TimeTick>1661875436</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="107" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T90">
+<Obj plainTxt="False" ><![CDATA[Image: SignOff Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:57]]></Time>
+<TimeTick>1661875437</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="108" status="Passed" >
+<Disp><![CDATA[Image: SignOff Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration8\t4.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="30.08.2022 - 19:03:56" eTime="30.08.2022 - 19:03:57" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="99" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="98" status="Passed" >
+<Disp><![CDATA[04_ItineraryListBrowsing Iteration 8 (Row 8)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T91" iterID="9" >
+<Action rID="T92">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T93">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:57]]></Time>
+<TimeTick>1661875437</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="113" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T94">
+<Obj plainTxt="False" ><![CDATA[Url: WebTours]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:57]]></Time>
+<TimeTick>1661875437</TimeTick>
+<NodeArgs eType="General" icon="5" nRep="114" status="Passed" >
+<Disp><![CDATA[Url: WebTours]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration9\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T95">
+<Obj plainTxt="False" ><![CDATA[Service: Set Sockets Option]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Set socket option <STRONG><FONT COLOR=#00AF00>SSL_VERSION</FONT></STRONG> with value <STRONG><FONT COLOR=#00AF00>AUTO</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:57]]></Time>
+<TimeTick>1661875437</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="115" >
+<Disp><![CDATA[Service: Set Sockets Option]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T96">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=User password was correct</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:57]]></Time>
+<TimeTick>1661875437</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="116" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T97">
+<Obj plainTxt="False" ><![CDATA[Submit Form: login.pl]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:57]]></Time>
+<TimeTick>1661875437</TimeTick>
+<NodeArgs eType="General" icon="7" nRep="117" status="Passed" >
+<Disp><![CDATA[Submit Form: login.pl]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration9\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T98">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text=Itinerary</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:57]]></Time>
+<TimeTick>1661875437</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="118" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T99">
+<Obj plainTxt="False" ><![CDATA[Image: Itinerary Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:57]]></Time>
+<TimeTick>1661875437</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="119" status="Passed" >
+<Disp><![CDATA[Image: Itinerary Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration9\t3.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T100">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:57]]></Time>
+<TimeTick>1661875437</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="120" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T101">
+<Obj plainTxt="False" ><![CDATA[Image: SignOff Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:57]]></Time>
+<TimeTick>1661875437</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="121" status="Passed" >
+<Disp><![CDATA[Image: SignOff Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration9\t4.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="30.08.2022 - 19:03:57" eTime="30.08.2022 - 19:03:57" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="112" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="111" status="Passed" >
+<Disp><![CDATA[04_ItineraryListBrowsing Iteration 9 (Row 9)]]></Disp>
+</NodeArgs>
+</DIter>
+<DIter rID="T102" iterID="10" >
+<Action rID="T103">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T104">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:57]]></Time>
+<TimeTick>1661875437</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="126" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T105">
+<Obj plainTxt="False" ><![CDATA[Url: WebTours]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:57]]></Time>
+<TimeTick>1661875437</TimeTick>
+<NodeArgs eType="General" icon="5" nRep="127" status="Passed" >
+<Disp><![CDATA[Url: WebTours]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration10\t1.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T106">
+<Obj plainTxt="False" ><![CDATA[Service: Set Sockets Option]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Set socket option <STRONG><FONT COLOR=#00AF00>SSL_VERSION</FONT></STRONG> with value <STRONG><FONT COLOR=#00AF00>AUTO</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:57]]></Time>
+<TimeTick>1661875437</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="128" >
+<Disp><![CDATA[Service: Set Sockets Option]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T107">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=User password was correct</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:57]]></Time>
+<TimeTick>1661875437</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="129" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T108">
+<Obj plainTxt="False" ><![CDATA[Submit Form: login.pl]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:58]]></Time>
+<TimeTick>1661875438</TimeTick>
+<NodeArgs eType="General" icon="7" nRep="130" status="Passed" >
+<Disp><![CDATA[Submit Form: login.pl]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration10\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T109">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text=Itinerary</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:58]]></Time>
+<TimeTick>1661875438</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="131" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T110">
+<Obj plainTxt="False" ><![CDATA[Image: Itinerary Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:58]]></Time>
+<TimeTick>1661875438</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="132" status="Passed" >
+<Disp><![CDATA[Image: Itinerary Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration10\t3.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T111">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Find]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#00AF00>Text/IC=A Session ID has been created and loaded into a cookie</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:58]]></Time>
+<TimeTick>1661875438</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="133" >
+<Disp><![CDATA[Service: Reg Find]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T112">
+<Obj plainTxt="False" ><![CDATA[Image: SignOff Button]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[30.08.2022 - 19:03:58]]></Time>
+<TimeTick>1661875438</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="134" status="Passed" >
+<Disp><![CDATA[Image: SignOff Button]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration10\t4.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="30.08.2022 - 19:03:57" eTime="30.08.2022 - 19:03:58" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="125" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="124" status="Passed" >
+<Disp><![CDATA[04_ItineraryListBrowsing Iteration 10 (Row 10)]]></Disp>
+</NodeArgs>
+</DIter>
+<Action rID="T113">
 <AName><![CDATA[vuser_end]]></AName>
-<Summary sTime="29.08.2022 - 14:38:24" eTime="29.08.2022 - 14:38:24" passed="0" failed="0" warnings="0" ></Summary>
-<NodeArgs eType="StartAction" icon="2" nRep="16" >
+<Summary sTime="30.08.2022 - 19:03:58" eTime="30.08.2022 - 19:03:58" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="137" >
 <Disp><![CDATA[vuser_end Summary]]></Disp>
 </NodeArgs>
 </Action>
-<Summary sTime="29.08.2022 - 14:38:23" eTime="29.08.2022 - 14:38:24" passed="4" failed="0" warnings="0" ></Summary>
+<Summary sTime="30.08.2022 - 19:03:51" eTime="30.08.2022 - 19:03:58" passed="40" failed="0" warnings="0" ></Summary>
 <NodeArgs eType="StartTest" icon="1" nRep="4" status="Passed" >
 <Disp><![CDATA[Test 04_ItineraryListBrowsing Summary]]></Disp>
 </NodeArgs>

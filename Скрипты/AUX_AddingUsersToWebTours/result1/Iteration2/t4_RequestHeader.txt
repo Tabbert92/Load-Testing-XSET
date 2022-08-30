@@ -1,0 +1,10 @@
+GET /cgi-bin/welcome.pl?page=menus HTTP/1.1
+Referer: http://localhost:1080/cgi-bin/login.pl
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+Accept-Encoding: gzip, deflate
+Accept-Language: ru-RU
+Accept: */*
+Connection: Keep-Alive
+Host: localhost:1080
+Cookie: MSO=SID&1661869907; MTUserInfo=firstName&first01&address2&000001&username&user01&hash&49&lastName&last01&address1&smt01&creditCard&&expDate&
+

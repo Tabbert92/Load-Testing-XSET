@@ -42,6 +42,14 @@ Project("0C8D8A4F-53C5-442B-BE27-6358A2E51223") = "05_ItineraryListCanceling", "
 		Value = False
 	EndProjectSection
 EndProject
+Project("4AD87723-4542-4290-92BD-DAC4066CABB3") = "AUX_AddingUsersToWebTours", "AUX_AddingUsersToWebTours\AUX_AddingUsersToWebTours.usr", "4AD87723-4542-4290-92BD-DAC4066CABB3"
+	ProjectSection(CustomLoading) = Data
+		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkQ6XExvYWQgVGVzdGluZyBYU0VUXExvYWQtVGVzdGluZy1YU0VUXNCh0LrRgNC40L/RgtGLXEFVWF9BZGRpbmdVc2Vyc1RvV2ViVG91cnNcQVVYX0FkZGluZ1VzZXJzVG9XZWJUb3Vycy51c3I8L0xvYWREYXRhPg0KICA8RmlsZXM+DQogICAgPEZpbGU+RDpcTG9hZCBUZXN0aW5nIFhTRVRcTG9hZC1UZXN0aW5nLVhTRVRc0KHQutGA0LjQv9GC0YtcQVVYX0FkZGluZ1VzZXJzVG9XZWJUb3Vyc1xBVVhfQWRkaW5nVXNlcnNUb1dlYlRvdXJzLnVzcjwvRmlsZT4NCiAgPC9GaWxlcz4NCiAgPE1vZGlmaWVkPjIwMjItMDgtMjlUMjM6MDA6NTYuNTUyOTg5OCswMzowMDwvTW9kaWZpZWQ+DQo8L1BlcnNpc3RlbmNlVG9rZW4+
+	EndProjectSection
+	ProjectSection(ExpandInVugen) = Data
+		Value = False
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,5 +76,9 @@ Global
 		0C8D8A4F-53C5-442B-BE27-6358A2E51223.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		0C8D8A4F-53C5-442B-BE27-6358A2E51223.Release|Any CPU.Build.0 = Release|Any CPU
 		0C8D8A4F-53C5-442B-BE27-6358A2E51223.Release|Any CPU.ActiveCfg = Release|Any CPU
+		4AD87723-4542-4290-92BD-DAC4066CABB3.Debug|Any CPU.Build.0 = Debug|Any CPU
+		4AD87723-4542-4290-92BD-DAC4066CABB3.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		4AD87723-4542-4290-92BD-DAC4066CABB3.Release|Any CPU.Build.0 = Release|Any CPU
+		4AD87723-4542-4290-92BD-DAC4066CABB3.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,7 +1,7 @@
 [General]
 Type=Multi
 DefaultCfg=default.cfg
-ParameterFile=
+ParameterFile=01_LoginLogout.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 RunType=cci
@@ -52,12 +52,13 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="login__*delimiter*__logout"
+Order="01_LoginLogout__*delimiter*__login__*delimiter*__logout"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
+01_LoginLogout=
 login=
 logout=

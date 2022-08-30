@@ -1,2 +1,2 @@
-"userSession=134611.104252734zQctAfipzHftVfttpDfcAf&username=jojo&password=bean&JSFormSubmit=of"
-"f&login.x=74&login.y=11"
+"userSession=134619.427055488zQcttizpHHQVzzzHtVftzpQcAzHf&username=user00&password=12345&JSForm"
+"Submit=off&login.x=56&login.y=10"

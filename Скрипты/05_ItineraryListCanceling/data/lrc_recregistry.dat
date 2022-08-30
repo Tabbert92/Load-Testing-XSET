@@ -166,7 +166,7 @@ Registry settings:
 		default	false
 	TestDir
 		(Default)	
-		default	C:\Users\baldr\OneDrive\Документы\VuGen\Scripts\05_ItineraryListCanceling\data\
+		default	D:\Load Testing XSET\Load-Testing-XSET\Скрипты\05_ItineraryListCanceling\data\
 	TrapOnClient
 		default	true
 	TrapOnMainThreadOnly
