@@ -1,10 +1,6 @@
 #ifndef CommonFuctions
 #define CommonFuctions
 
-#include "lrun.h"
-#include "web_api.h"
-#include "lrw_custom_body.h"
-
 void loadStartingPage (){
 	
 	web_reg_save_param("userSession",
