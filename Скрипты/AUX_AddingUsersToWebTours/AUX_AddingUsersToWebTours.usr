@@ -52,14 +52,14 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="NewUserRegistration__*delimiter*__ContinueAfterRegistration__*delimiter*__logout__*delimiter*__AUX_AddingUsersToWebTours"
+Order="AUX_AddingUsersToWebTours__*delimiter*__NewUserRegistration__*delimiter*__ContinueAfterRegistration__*delimiter*__logout"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
+AUX_AddingUsersToWebTours=
 NewUserRegistration=
 ContinueAfterRegistration=
 logout=
-AUX_AddingUsersToWebTours=

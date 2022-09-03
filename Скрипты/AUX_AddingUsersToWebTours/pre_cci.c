@@ -2643,8 +2643,8 @@ Action()
 			"Name=passwordConfirm", "Value={password}", "ENDITEM", 
 			"Name=firstName", "Value={firstName}", "ENDITEM", 
 			"Name=lastName", "Value={lastName}", "ENDITEM", 
-			"Name=address1", "Value={adress1}", "ENDITEM", 
-			"Name=address2", "Value={adress2}", "ENDITEM", 
+			"Name=address1", "Value={address1}", "ENDITEM", 
+			"Name=address2", "Value={address2}", "ENDITEM", 
 			"Name=register.x", "Value=37", "ENDITEM", 
 			"Name=register.y", "Value=8", "ENDITEM", 
 			"LAST");

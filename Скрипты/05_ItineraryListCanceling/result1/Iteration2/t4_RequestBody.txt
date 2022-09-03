@@ -1,2 +1,0 @@
-"1=on&flightID=18900-793-fl&flightID=10753-1565-fl&flightID=103803-23284-fl&.cgifields=1&.cgifi"
-"elds=3&.cgifields=2&removeFlights.x=61&removeFlights.y=10"

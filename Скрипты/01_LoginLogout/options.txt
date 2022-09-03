@@ -1,9 +1,0 @@
--+
--DCCI
--D_IDA_XL
--DWINNT
--ID:\Load Testing XSET\Load-Testing-XSET\Скрипты\01_LoginLogout
--ID:\Program Files (x86)\Micro Focus\LoadRunner\include
--ed:\load testing xset\load-testing-xset\скрипты\01_loginlogout\\logfile.log
-d:\load testing xset\load-testing-xset\скрипты\01_loginlogout\\combined_01_LoginLogout.c
-d:\load testing xset\load-testing-xset\скрипты\01_loginlogout\\pre_cci.c

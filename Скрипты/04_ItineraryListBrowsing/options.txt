@@ -1,9 +1,0 @@
--+
--DCCI
--D_IDA_XL
--DWINNT
--ID:\Load Testing XSET\Load-Testing-XSET\Скрипты\04_ItineraryListBrowsing
--ID:\Program Files (x86)\Micro Focus\LoadRunner\include
--ed:\load testing xset\load-testing-xset\скрипты\04_itinerarylistbrowsing\\logfile.log
-d:\load testing xset\load-testing-xset\скрипты\04_itinerarylistbrowsing\\combined_04_ItineraryListBrowsing.c
-d:\load testing xset\load-testing-xset\скрипты\04_itinerarylistbrowsing\\pre_cci.c

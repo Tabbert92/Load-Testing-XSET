@@ -1,9 +1,0 @@
--+
--DCCI
--D_IDA_XL
--DWINNT
--ID:\Load Testing XSET\Load-Testing-XSET\Скрипты\02_TicketSearchWithoutBuying
--ID:\Program Files (x86)\Micro Focus\LoadRunner\include
--ed:\load testing xset\load-testing-xset\скрипты\02_ticketsearchwithoutbuying\\logfile.log
-d:\load testing xset\load-testing-xset\скрипты\02_ticketsearchwithoutbuying\\combined_02_TicketSearchWithoutBuying.c
-d:\load testing xset\load-testing-xset\скрипты\02_ticketsearchwithoutbuying\\pre_cci.c

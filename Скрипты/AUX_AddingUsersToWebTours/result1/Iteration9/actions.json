@@ -6,61 +6,61 @@
                 "stepId": "STEP41",
                 "stepName": "Url: WebTours",
                 "infFile": "t1.inf",
-                "time": 1661869915378
+                "time": 1662038198276
             },
             {
                 "stepId": "STEP42",
                 "stepName": "Link: sign up now",
                 "infFile": "t2.inf",
-                "time": 1661869915636
+                "time": 1662038198390
             },
             {
                 "stepId": "STEP43",
                 "stepName": "Submit Form: login.pl",
                 "infFile": "t3.inf",
-                "time": 1661869915892
+                "time": 1662038198487
             },
             {
                 "stepId": "STEP44",
                 "stepName": "Image: button_next.gif",
                 "infFile": "t4.inf",
-                "time": 1661869916143
+                "time": 1662038198644
             },
             {
                 "stepId": "STEP45",
                 "stepName": "Image: SignOff Button",
                 "infFile": "t5.inf",
-                "time": 1661869916513
+                "time": 1662038198782
             }
         ],
         "transactions": [
             {
                 "transactionName": "NewUserRegistration",
-                "rawStartTime": 1661869915401,
-                "rawEndTime": 1661869915903,
+                "rawStartTime": 1662038198299,
+                "rawEndTime": 1662038198498,
                 "thinkTime": 0.0,
-                "wastedTime": 0.05197429656982422
+                "wastedTime": 0.05075502395629883
             },
             {
                 "transactionName": "ContinueAfterRegistration",
-                "rawStartTime": 1661869915914,
-                "rawEndTime": 1661869916154,
+                "rawStartTime": 1662038198509,
+                "rawEndTime": 1662038198654,
                 "thinkTime": 0.0,
-                "wastedTime": 0.02709197998046875
+                "wastedTime": 0.02434849739074707
             },
             {
                 "transactionName": "logout",
-                "rawStartTime": 1661869916165,
-                "rawEndTime": 1661869916524,
+                "rawStartTime": 1662038198665,
+                "rawEndTime": 1662038198793,
                 "thinkTime": 0.0,
-                "wastedTime": 0.024489402770996095
+                "wastedTime": 0.023128509521484376
             },
             {
                 "transactionName": "AUX_AddingUsersToWebTours",
-                "rawStartTime": 1661869915216,
-                "rawEndTime": 1661869916535,
+                "rawStartTime": 1662038198150,
+                "rawEndTime": 1662038198804,
                 "thinkTime": 0.0,
-                "wastedTime": 0.13013625144958497
+                "wastedTime": 0.12315130233764649
             }
         ]
     }
