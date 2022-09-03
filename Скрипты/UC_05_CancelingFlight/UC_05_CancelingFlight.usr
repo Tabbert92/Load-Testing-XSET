@@ -52,7 +52,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="UC_04_ItineraryListBrowsing__*delimiter*__login__*delimiter*__browsingItenerary__*delimiter*__logout__*delimiter*__CancelingFlight"
+Order="UC_04_ItineraryListBrowsing__*delimiter*__login__*delimiter*__browsingItenerary__*delimiter*__CancelingFlight__*delimiter*__logout"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -62,5 +62,5 @@ ActiveRunName=result1
 UC_04_ItineraryListBrowsing=
 login=
 browsingItenerary=
-logout=
 CancelingFlight=
+logout=
