@@ -5,7 +5,11 @@ Action()
 	
 	lr_start_transaction("UC_04_ItineraryListBrowsing");
 	
+		lr_start_transaction("openHomePage");
+
 		loadStartingPage();
+		
+		lr_end_transaction("openHomePage", LR_AUTO);
 	
 		lr_think_time(5);
 	

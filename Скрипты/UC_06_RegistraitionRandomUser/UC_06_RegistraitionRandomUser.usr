@@ -52,7 +52,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="UC_06_RegistraitionRandomUser__*delimiter*__signUpNowButtonClick__*delimiter*__continueButtonClick__*delimiter*__logout__*delimiter*__newUserRegistration"
+Order="UC_06_RegistraitionRandomUser__*delimiter*__signUpNowButtonClick__*delimiter*__newUserRegistration__*delimiter*__continueButtonClick__*delimiter*__logout__*delimiter*__openHomePage"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -61,6 +61,7 @@ ActiveRunName=result1
 [Transactions]
 UC_06_RegistraitionRandomUser=
 signUpNowButtonClick=
+newUserRegistration=
 continueButtonClick=
 logout=
-newUserRegistration=
+openHomePage=
