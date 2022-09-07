@@ -1,9 +1,0 @@
--+
--DCCI
--D_IDA_XL
--DWINNT
--ID:\Load Testing XSET\Load-Testing-XSET\Скрипты\AUX_AddingUsersToWebTours
--ID:\Program Files (x86)\Micro Focus\LoadRunner\include
--ed:\load testing xset\load-testing-xset\скрипты\aux_addinguserstowebtours\\logfile.log
-d:\load testing xset\load-testing-xset\скрипты\aux_addinguserstowebtours\\combined_AUX_AddingUsersToWebTours.c
-d:\load testing xset\load-testing-xset\скрипты\aux_addinguserstowebtours\\pre_cci.c
