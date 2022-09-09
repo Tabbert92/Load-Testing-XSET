@@ -1,0 +1,43 @@
+[Scenario]
+Product=LoadRunner Controller
+Version=2021.0.0.0
+Path=D:\Load Testing XSET\Load-Testing-XSET\Scenario\NominalLoadScenario.lrs
+Subject=NominalLoadScenario
+Result_file=D:\Load Testing XSET\Load-Testing-XSET\Result\res\res.lrr
+Description=
+ResultName=res
+Time_Zone=-10800
+Start_time=1662720789
+Daylight_Bias=0
+Stop_time=1662722290
+[Configuration]
+Public_local=1
+Is_mix=1
+Is_runner_file=0
+Runner_file=
+[Running_mode]
+Start_reason=By command
+Stop_reason=By a user
+[Data Collection]
+FullData=1
+[Scenario_summary]
+Scenario Type=Manual Scenario
+Goal Profile Name=Schedule 1
+Mode=Scenario Scheduling
+Scenario Duration=Start 10 Vusers: 1 every 00:00:10 (HH:MM:SS); Run for 00:22:00 (HH:MM:SS); Stop all Vusers: 1 every 00:00:10 (HH:MM:SS)
+Load Behavior=Initialize each Vuser just before it runs
+Global Schedule=ST10_1E10;R1320;SP10_1E10;
+[Scripts]
+uc_03_ticket_buying=D:\Load Testing XSET\Load-Testing-XSET\Scripts\UC_03_TicketBuying\UC_03_TicketBuying.usr
+uc_07_ticket_search_without_buying_with_flight_selection=D:\Load Testing XSET\Load-Testing-XSET\Scripts\UC_07_TicketSearchWithoutBuyingWithFlightSelection\UC_07_TicketSearchWithoutBuyingWithFlightSelection.usr
+uc_01_login_logout=D:\Load Testing XSET\Load-Testing-XSET\Scripts\UC_01_LoginLogout\UC_01_LoginLogout.usr
+uc_05_canceling_flight=D:\Load Testing XSET\Load-Testing-XSET\Scripts\UC_05_CancelingFlight\UC_05_CancelingFlight.usr
+UC_02_TicketSearchWithoutBuying=D:\Load Testing XSET\Load-Testing-XSET\Scripts\UC_02_TicketSearchWithoutBuying\UC_02_TicketSearchWithoutBuying.usr
+uc_06_registraition_random_user=D:\Load Testing XSET\Load-Testing-XSET\Scripts\UC_06_RegistraitionRandomUser\UC_06_RegistraitionRandomUser.usr
+[Scripts_types]
+uc_03_ticket_buying=Multi+QTWeb
+uc_07_ticket_search_without_buying_with_flight_selection=Multi+QTWeb
+uc_01_login_logout=Multi+QTWeb
+uc_05_canceling_flight=Multi+QTWeb
+UC_02_TicketSearchWithoutBuying=Multi+QTWeb
+uc_06_registraition_random_user=Multi+QTWeb

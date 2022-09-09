@@ -1,7 +1,7 @@
 Action()
 {
 
-	lr_start_transaction("UC_02_TicketSearchWithoutBuying");
+	lr_start_transaction("UC_07_TicketSearchWithoutBuyingWithFlightSelection");
 	
 		lr_start_transaction("openHomePage");
 
@@ -110,13 +110,13 @@ Action()
 	
 		lr_end_transaction("choseFlightTime",LR_AUTO);
 
-		/*lr_start_transaction("logout");
+		lr_start_transaction("logout");
 		
 			logout();
 	
-		lr_end_transaction("logout",LR_AUTO);*/
+		lr_end_transaction("logout",LR_AUTO);
 	
-	lr_end_transaction("UC_02_TicketSearchWithoutBuying", LR_AUTO);
+	lr_end_transaction("UC_07_TicketSearchWithoutBuyingWithFlightSelection", LR_AUTO);
 
 	return 0;
 }

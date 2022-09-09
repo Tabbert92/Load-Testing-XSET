@@ -1,0 +1,5 @@
+[Diagnostics]
+Status=-1
+[Collate Recovery]
+Scenario=D:\Load Testing XSET\Load-Testing-XSET\Scenario\NominalLoadScenario.lrs
+Completed=0

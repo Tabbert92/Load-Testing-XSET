@@ -1,9 +1,9 @@
-Virtual User Script started at: 01.09.2022 16:16:32
+Virtual User Script started at: 09.09.2022 13:08:36
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (янв 05 2021 19:27:22)  	[MsgId: MMSG-26983]
 Run mode: HTML  	[MsgId: MMSG-26993]
 Replay user agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko  	[MsgId: MMSG-26988]
-Runtime Settings file: "D:\Load Testing XSET\Load-Testing-XSET\Скрипты\AUX_AddingUsersToWebTours\\default.cfg"  	[MsgId: MMSG-27141]
+Runtime Settings file: "D:\Load Testing XSET\Load-Testing-XSET\Scripts\AUX_AddingUsersToWebTours\\default.cfg"  	[MsgId: MMSG-27141]
 Ending action vuser_init.
 Running Vuser...
 Starting iteration 1.
@@ -21,7 +21,7 @@ Action.c(10): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=hom
 Action.c(10): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
 Action.c(10): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
 Action.c(10): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(10): web_url("WebTours") was successful, 10078 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(10): web_url("WebTours") was successful, 10072 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(19): web_set_sockets_option started  	[MsgId: MMSG-26355]
 Action.c(19): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
 Action.c(22): Notify: Transaction "NewUserRegistration" started.
@@ -50,7 +50,7 @@ Action.c(33): Submitting form to "http://localhost:1080/cgi-bin/login.pl", Targe
 Action.c(33): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(33): Registered web_reg_find successful for "Text=We hope we can meet all your current and future travel needs" (count=1)  	[MsgId: MMSG-26364]
 Action.c(33): web_submit_form("login.pl") was successful, 1079 body bytes, 370 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0.1635 Wasted Time: 0.0087).
+Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0,2002 Wasted Time: 0,0103).
 Action.c(50): Notify: Transaction "ContinueAfterRegistration" started.
 Action.c(52): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(52): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -64,7 +64,7 @@ Action.c(56): Found resource "http://localhost:1080/WebTours/images/in_home.gif"
 Action.c(56): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 Action.c(56): Registered web_reg_find successful for "Text=User has returned to the home page" (count=1)  	[MsgId: MMSG-26364]
 Action.c(56): web_image("button_next.gif") was successful, 5896 body bytes, 1892 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0.1286 Wasted Time: 0.0045).
+Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1375 Wasted Time: 0,0061).
 Action.c(64): Notify: Transaction "logout" started.
 Action.c(66): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(66): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -75,9 +75,9 @@ Action.c(70): Detected non-resource "http://localhost:1080/WebTours/home.html" i
 Action.c(70): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
 Action.c(70): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(70): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(70): web_image("SignOff Button") was successful, 2172 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1126 Wasted Time: 0,0035).
-Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 1,1723 Wasted Time: 0,0894).
+Action.c(70): web_image("SignOff Button") was successful, 2176 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1174 Wasted Time: 0,0039).
+Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,8108 Wasted Time: 0,1143).
 Ending action Action.
 Ending iteration 1.
 Starting iteration 2.
@@ -106,7 +106,7 @@ Action.c(10): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=hom
 Action.c(10): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
 Action.c(10): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
 Action.c(10): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(10): web_url("WebTours") was successful, 10076 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(10): web_url("WebTours") was successful, 10080 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(19): web_set_sockets_option started  	[MsgId: MMSG-26355]
 Action.c(19): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
 Action.c(22): Notify: Transaction "NewUserRegistration" started.
@@ -135,7 +135,7 @@ Action.c(33): Submitting form to "http://localhost:1080/cgi-bin/login.pl", Targe
 Action.c(33): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(33): Registered web_reg_find successful for "Text=We hope we can meet all your current and future travel needs" (count=1)  	[MsgId: MMSG-26364]
 Action.c(33): web_submit_form("login.pl") was successful, 1079 body bytes, 370 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0.2034 Wasted Time: 0.0126).
+Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0,2801 Wasted Time: 0,0129).
 Action.c(50): Notify: Transaction "ContinueAfterRegistration" started.
 Action.c(52): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(52): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -149,7 +149,7 @@ Action.c(56): Found resource "http://localhost:1080/WebTours/images/in_home.gif"
 Action.c(56): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 Action.c(56): Registered web_reg_find successful for "Text=User has returned to the home page" (count=1)  	[MsgId: MMSG-26364]
 Action.c(56): web_image("button_next.gif") was successful, 5896 body bytes, 1892 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1316 Wasted Time: 0,0065).
+Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1345 Wasted Time: 0,0074).
 Action.c(64): Notify: Transaction "logout" started.
 Action.c(66): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(66): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -160,9 +160,9 @@ Action.c(70): Detected non-resource "http://localhost:1080/WebTours/home.html" i
 Action.c(70): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
 Action.c(70): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(70): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(70): web_image("SignOff Button") was successful, 2175 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1136 Wasted Time: 0,0070).
-Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,6113 Wasted Time: 0,0344).
+Action.c(70): web_image("SignOff Button") was successful, 2176 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1155 Wasted Time: 0,0056).
+Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,7036 Wasted Time: 0,0345).
 Ending action Action.
 Ending iteration 2.
 Starting iteration 3.
@@ -220,7 +220,7 @@ Action.c(33): Submitting form to "http://localhost:1080/cgi-bin/login.pl", Targe
 Action.c(33): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(33): Registered web_reg_find successful for "Text=We hope we can meet all your current and future travel needs" (count=1)  	[MsgId: MMSG-26364]
 Action.c(33): web_submit_form("login.pl") was successful, 1079 body bytes, 370 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0.1625 Wasted Time: 0.0185).
+Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0.1723 Wasted Time: 0.0200).
 Action.c(50): Notify: Transaction "ContinueAfterRegistration" started.
 Action.c(52): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(52): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -234,7 +234,7 @@ Action.c(56): Found resource "http://localhost:1080/WebTours/images/in_home.gif"
 Action.c(56): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 Action.c(56): Registered web_reg_find successful for "Text=User has returned to the home page" (count=1)  	[MsgId: MMSG-26364]
 Action.c(56): web_image("button_next.gif") was successful, 5896 body bytes, 1892 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1326 Wasted Time: 0,0090).
+Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1425 Wasted Time: 0,0096).
 Action.c(64): Notify: Transaction "logout" started.
 Action.c(66): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(66): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -246,8 +246,8 @@ Action.c(70): Retrieving data from cache for "http://localhost:1080/WebTours/hom
 Action.c(70): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(70): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
 Action.c(70): web_image("SignOff Button") was successful, 2175 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1146 Wasted Time: 0,0079).
-Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,5744 Wasted Time: 0,0444).
+Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1195 Wasted Time: 0,0081).
+Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,5992 Wasted Time: 0,0475).
 Ending action Action.
 Ending iteration 3.
 Starting iteration 4.
@@ -276,7 +276,7 @@ Action.c(10): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=hom
 Action.c(10): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
 Action.c(10): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
 Action.c(10): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(10): web_url("WebTours") was successful, 10080 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(10): web_url("WebTours") was successful, 10079 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(19): web_set_sockets_option started  	[MsgId: MMSG-26355]
 Action.c(19): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
 Action.c(22): Notify: Transaction "NewUserRegistration" started.
@@ -305,7 +305,7 @@ Action.c(33): Submitting form to "http://localhost:1080/cgi-bin/login.pl", Targe
 Action.c(33): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(33): Registered web_reg_find successful for "Text=We hope we can meet all your current and future travel needs" (count=1)  	[MsgId: MMSG-26364]
 Action.c(33): web_submit_form("login.pl") was successful, 1079 body bytes, 370 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0,1704 Wasted Time: 0,0229).
+Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0,2063 Wasted Time: 0,0239).
 Action.c(50): Notify: Transaction "ContinueAfterRegistration" started.
 Action.c(52): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(52): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -319,7 +319,7 @@ Action.c(56): Found resource "http://localhost:1080/WebTours/images/in_home.gif"
 Action.c(56): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 Action.c(56): Registered web_reg_find successful for "Text=User has returned to the home page" (count=1)  	[MsgId: MMSG-26364]
 Action.c(56): web_image("button_next.gif") was successful, 5896 body bytes, 1892 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0.1355 Wasted Time: 0.0114).
+Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1410 Wasted Time: 0,0119).
 Action.c(64): Notify: Transaction "logout" started.
 Action.c(66): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(66): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -330,9 +330,9 @@ Action.c(70): Detected non-resource "http://localhost:1080/WebTours/home.html" i
 Action.c(70): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
 Action.c(70): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(70): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(70): web_image("SignOff Button") was successful, 2176 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0.1156 Wasted Time: 0.0103).
-Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0.5814 Wasted Time: 0.0563).
+Action.c(70): web_image("SignOff Button") was successful, 2171 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1210 Wasted Time: 0,0107).
+Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,6590 Wasted Time: 0,0589).
 Ending action Action.
 Ending iteration 4.
 Starting iteration 5.
@@ -361,7 +361,7 @@ Action.c(10): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=hom
 Action.c(10): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
 Action.c(10): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
 Action.c(10): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(10): web_url("WebTours") was successful, 10080 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(10): web_url("WebTours") was successful, 10075 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(19): web_set_sockets_option started  	[MsgId: MMSG-26355]
 Action.c(19): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
 Action.c(22): Notify: Transaction "NewUserRegistration" started.
@@ -390,7 +390,7 @@ Action.c(33): Submitting form to "http://localhost:1080/cgi-bin/login.pl", Targe
 Action.c(33): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(33): Registered web_reg_find successful for "Text=We hope we can meet all your current and future travel needs" (count=1)  	[MsgId: MMSG-26364]
 Action.c(33): web_submit_form("login.pl") was successful, 1079 body bytes, 370 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0.1685 Wasted Time: 0.0279).
+Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0.2117 Wasted Time: 0.0322).
 Action.c(50): Notify: Transaction "ContinueAfterRegistration" started.
 Action.c(52): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(52): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -404,7 +404,7 @@ Action.c(56): Found resource "http://localhost:1080/WebTours/images/in_home.gif"
 Action.c(56): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 Action.c(56): Registered web_reg_find successful for "Text=User has returned to the home page" (count=1)  	[MsgId: MMSG-26364]
 Action.c(56): web_image("button_next.gif") was successful, 5896 body bytes, 1892 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1494 Wasted Time: 0,0138).
+Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1444 Wasted Time: 0,0140).
 Action.c(64): Notify: Transaction "logout" started.
 Action.c(66): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(66): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -415,9 +415,9 @@ Action.c(70): Detected non-resource "http://localhost:1080/WebTours/home.html" i
 Action.c(70): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
 Action.c(70): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(70): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(70): web_image("SignOff Button") was successful, 2168 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1156 Wasted Time: 0,0127).
-Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,5963 Wasted Time: 0,0686).
+Action.c(70): web_image("SignOff Button") was successful, 2171 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1269 Wasted Time: 0,0128).
+Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,6675 Wasted Time: 0,0740).
 Ending action Action.
 Ending iteration 5.
 Starting iteration 6.
@@ -446,7 +446,7 @@ Action.c(10): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=hom
 Action.c(10): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
 Action.c(10): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
 Action.c(10): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(10): web_url("WebTours") was successful, 10072 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(10): web_url("WebTours") was successful, 10077 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(19): web_set_sockets_option started  	[MsgId: MMSG-26355]
 Action.c(19): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
 Action.c(22): Notify: Transaction "NewUserRegistration" started.
@@ -475,7 +475,7 @@ Action.c(33): Submitting form to "http://localhost:1080/cgi-bin/login.pl", Targe
 Action.c(33): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(33): Registered web_reg_find successful for "Text=We hope we can meet all your current and future travel needs" (count=1)  	[MsgId: MMSG-26364]
 Action.c(33): web_submit_form("login.pl") was successful, 1079 body bytes, 370 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0,1734 Wasted Time: 0,0338).
+Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0.1948 Wasted Time: 0.0368).
 Action.c(50): Notify: Transaction "ContinueAfterRegistration" started.
 Action.c(52): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(52): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -489,7 +489,7 @@ Action.c(56): Found resource "http://localhost:1080/WebTours/images/in_home.gif"
 Action.c(56): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 Action.c(56): Registered web_reg_find successful for "Text=User has returned to the home page" (count=1)  	[MsgId: MMSG-26364]
 Action.c(56): web_image("button_next.gif") was successful, 5896 body bytes, 1892 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1405 Wasted Time: 0,0164).
+Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1484 Wasted Time: 0,0171).
 Action.c(64): Notify: Transaction "logout" started.
 Action.c(66): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(66): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -500,9 +500,9 @@ Action.c(70): Detected non-resource "http://localhost:1080/WebTours/home.html" i
 Action.c(70): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
 Action.c(70): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(70): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(70): web_image("SignOff Button") was successful, 2168 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1195 Wasted Time: 0,0152).
-Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,5983 Wasted Time: 0,0821).
+Action.c(70): web_image("SignOff Button") was successful, 2173 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1264 Wasted Time: 0,0157).
+Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,6421 Wasted Time: 0,0868).
 Ending action Action.
 Ending iteration 6.
 Starting iteration 7.
@@ -531,7 +531,7 @@ Action.c(10): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=hom
 Action.c(10): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
 Action.c(10): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
 Action.c(10): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(10): web_url("WebTours") was successful, 10072 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(10): web_url("WebTours") was successful, 10077 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(19): web_set_sockets_option started  	[MsgId: MMSG-26355]
 Action.c(19): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
 Action.c(22): Notify: Transaction "NewUserRegistration" started.
@@ -560,7 +560,7 @@ Action.c(33): Submitting form to "http://localhost:1080/cgi-bin/login.pl", Targe
 Action.c(33): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(33): Registered web_reg_find successful for "Text=We hope we can meet all your current and future travel needs" (count=1)  	[MsgId: MMSG-26364]
 Action.c(33): web_submit_form("login.pl") was successful, 1079 body bytes, 370 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0,1804 Wasted Time: 0,0385).
+Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0,1997 Wasted Time: 0,0436).
 Action.c(50): Notify: Transaction "ContinueAfterRegistration" started.
 Action.c(52): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(52): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -574,7 +574,7 @@ Action.c(56): Found resource "http://localhost:1080/WebTours/images/in_home.gif"
 Action.c(56): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 Action.c(56): Registered web_reg_find successful for "Text=User has returned to the home page" (count=1)  	[MsgId: MMSG-26364]
 Action.c(56): web_image("button_next.gif") was successful, 5896 body bytes, 1892 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1425 Wasted Time: 0,0188).
+Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1489 Wasted Time: 0,0195).
 Action.c(64): Notify: Transaction "logout" started.
 Action.c(66): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(66): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -586,8 +586,8 @@ Action.c(70): Retrieving data from cache for "http://localhost:1080/WebTours/hom
 Action.c(70): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(70): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
 Action.c(70): web_image("SignOff Button") was successful, 2176 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1216 Wasted Time: 0,0178).
-Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,6113 Wasted Time: 0,0943).
+Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1294 Wasted Time: 0,0185).
+Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,6521 Wasted Time: 0,1010).
 Ending action Action.
 Ending iteration 7.
 Starting iteration 8.
@@ -645,7 +645,7 @@ Action.c(33): Submitting form to "http://localhost:1080/cgi-bin/login.pl", Targe
 Action.c(33): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(33): Registered web_reg_find successful for "Text=We hope we can meet all your current and future travel needs" (count=1)  	[MsgId: MMSG-26364]
 Action.c(33): web_submit_form("login.pl") was successful, 1079 body bytes, 370 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0.1884 Wasted Time: 0.0437).
+Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0,2042 Wasted Time: 0,0472).
 Action.c(50): Notify: Transaction "ContinueAfterRegistration" started.
 Action.c(52): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(52): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -659,7 +659,7 @@ Action.c(56): Found resource "http://localhost:1080/WebTours/images/in_home.gif"
 Action.c(56): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 Action.c(56): Registered web_reg_find successful for "Text=User has returned to the home page" (count=1)  	[MsgId: MMSG-26364]
 Action.c(56): web_image("button_next.gif") was successful, 5896 body bytes, 1892 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1476 Wasted Time: 0,0217).
+Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1504 Wasted Time: 0,0219).
 Action.c(64): Notify: Transaction "logout" started.
 Action.c(66): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(66): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -670,9 +670,9 @@ Action.c(70): Detected non-resource "http://localhost:1080/WebTours/home.html" i
 Action.c(70): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
 Action.c(70): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(70): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(70): web_image("SignOff Button") was successful, 2175 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1265 Wasted Time: 0,0206).
-Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,6302 Wasted Time: 0,1077).
+Action.c(70): web_image("SignOff Button") was successful, 2176 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1285 Wasted Time: 0,0203).
+Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,6645 Wasted Time: 0,1143).
 Ending action Action.
 Ending iteration 8.
 Starting iteration 9.
@@ -701,7 +701,7 @@ Action.c(10): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=hom
 Action.c(10): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
 Action.c(10): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
 Action.c(10): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(10): web_url("WebTours") was successful, 10079 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(10): web_url("WebTours") was successful, 10074 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(19): web_set_sockets_option started  	[MsgId: MMSG-26355]
 Action.c(19): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
 Action.c(22): Notify: Transaction "NewUserRegistration" started.
@@ -730,7 +730,7 @@ Action.c(33): Submitting form to "http://localhost:1080/cgi-bin/login.pl", Targe
 Action.c(33): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(33): Registered web_reg_find successful for "Text=We hope we can meet all your current and future travel needs" (count=1)  	[MsgId: MMSG-26364]
 Action.c(33): web_submit_form("login.pl") was successful, 1079 body bytes, 370 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0,1983 Wasted Time: 0,0508).
+Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0.2182 Wasted Time: 0.0520).
 Action.c(50): Notify: Transaction "ContinueAfterRegistration" started.
 Action.c(52): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(52): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -744,7 +744,7 @@ Action.c(56): Found resource "http://localhost:1080/WebTours/images/in_home.gif"
 Action.c(56): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 Action.c(56): Registered web_reg_find successful for "Text=User has returned to the home page" (count=1)  	[MsgId: MMSG-26364]
 Action.c(56): web_image("button_next.gif") was successful, 5896 body bytes, 1892 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1455 Wasted Time: 0,0243).
+Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1554 Wasted Time: 0,0247).
 Action.c(64): Notify: Transaction "logout" started.
 Action.c(66): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(66): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -755,9 +755,9 @@ Action.c(70): Detected non-resource "http://localhost:1080/WebTours/home.html" i
 Action.c(70): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
 Action.c(70): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(70): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(70): web_image("SignOff Button") was successful, 2175 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1275 Wasted Time: 0,0231).
-Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,6542 Wasted Time: 0,1232).
+Action.c(70): web_image("SignOff Button") was successful, 2170 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1374 Wasted Time: 0,0233).
+Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,6928 Wasted Time: 0,1254).
 Ending action Action.
 Ending iteration 9.
 Starting iteration 10.
@@ -786,7 +786,7 @@ Action.c(10): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=hom
 Action.c(10): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
 Action.c(10): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
 Action.c(10): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(10): web_url("WebTours") was successful, 10079 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(10): web_url("WebTours") was successful, 10074 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(19): web_set_sockets_option started  	[MsgId: MMSG-26355]
 Action.c(19): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
 Action.c(22): Notify: Transaction "NewUserRegistration" started.
@@ -815,7 +815,7 @@ Action.c(33): Submitting form to "http://localhost:1080/cgi-bin/login.pl", Targe
 Action.c(33): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(33): Registered web_reg_find successful for "Text=We hope we can meet all your current and future travel needs" (count=1)  	[MsgId: MMSG-26364]
 Action.c(33): web_submit_form("login.pl") was successful, 1079 body bytes, 370 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0.1944 Wasted Time: 0.0560).
+Action.c(47): Notify: Transaction "NewUserRegistration" ended with a "Pass" status (Duration: 0,2128 Wasted Time: 0,0642).
 Action.c(50): Notify: Transaction "ContinueAfterRegistration" started.
 Action.c(52): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(52): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -829,7 +829,7 @@ Action.c(56): Found resource "http://localhost:1080/WebTours/images/in_home.gif"
 Action.c(56): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 Action.c(56): Registered web_reg_find successful for "Text=User has returned to the home page" (count=1)  	[MsgId: MMSG-26364]
 Action.c(56): web_image("button_next.gif") was successful, 5896 body bytes, 1892 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0,1505 Wasted Time: 0,0273).
+Action.c(61): Notify: Transaction "ContinueAfterRegistration" ended with a "Pass" status (Duration: 0.1559 Wasted Time: 0.0279).
 Action.c(64): Notify: Transaction "logout" started.
 Action.c(66): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(66): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -840,9 +840,9 @@ Action.c(70): Detected non-resource "http://localhost:1080/WebTours/home.html" i
 Action.c(70): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
 Action.c(70): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(70): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-Action.c(70): web_image("SignOff Button") was successful, 2171 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0.1296 Wasted Time: 0.0265).
-Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0.6492 Wasted Time: 0.1378).
+Action.c(70): web_image("SignOff Button") was successful, 2176 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(75): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1410 Wasted Time: 0,0281).
+Action.c(77): Notify: Transaction "AUX_AddingUsersToWebTours" ended with a "Pass" status (Duration: 0,6960 Wasted Time: 0,1515).
 Ending action Action.
 Ending iteration 10.
 Ending Vuser...

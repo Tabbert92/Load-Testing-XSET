@@ -62,4 +62,14 @@ void logout(){
 		"Mode=HTML", 
 		LAST);
 }
+
+void generateRandomWord(int numberOfLetters)
+{
+	int i;
+	
+	lr_param_sprintf("randomWord", "%s", lr_eval_string("{alphabet}"));
+ 	
+ 	for (i = 0; i < numberOfLetters; i++)
+ 		lr_param_sprintf("randomWord", "%s%s", lr_eval_string("{randomWord}"), lr_eval_string("{alphabet}"));
+}
 	

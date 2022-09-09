@@ -1,0 +1,53 @@
+28 11 1662720789 2 196468088 1872462017 1699572
+28 4 uc_03_ticket_buying 1 1662720790 0 uc_03_ticket_buying localhost 0 1
+28 10 localhost 28 0 0
+28 0 uc_03_ticket_buying 1 1662720790 0 localhost 0
+28 8 uc_03_ticket_buying 1  0 0
+28 2 uc_03_ticket_buying 1 1662720790 0 p 0 0
+28 4 uc_07_ticket_search_without_buying_with_flight_selection 1 1662720799 0 uc_07_ticket_search_without_buying_with_flight_selection localhost 0 1
+28 0 uc_07_ticket_search_without_buying_with_flight_selection 1 1662720799 0 localhost 0
+28 8 uc_07_ticket_search_without_buying_with_flight_selection 1  0 0
+28 2 uc_07_ticket_search_without_buying_with_flight_selection 1 1662720799 0 p 0 0
+28 4 uc_01_login_logout 1 1662720809 0 uc_01_login_logout localhost 0 1
+28 0 uc_01_login_logout 1 1662720809 0 localhost 0
+28 8 uc_01_login_logout 1  0 0
+28 2 uc_01_login_logout 1 1662720809 0 p 0 0
+28 4 uc_05_canceling_flight 1 1662720819 0 uc_05_canceling_flight localhost 0 1
+28 0 uc_05_canceling_flight 1 1662720819 0 localhost 0
+28 8 uc_05_canceling_flight 1  0 0
+28 2 uc_05_canceling_flight 1 1662720819 0 p 0 0
+28 4 uc_03_ticket_buying 2 1662720829 0 uc_03_ticket_buying localhost 0 1
+28 0 uc_03_ticket_buying 2 1662720829 0 localhost 0
+28 8 uc_03_ticket_buying 2  0 0
+28 2 uc_03_ticket_buying 2 1662720829 0 p 0 0
+28 4 UC_02_TicketSearchWithoutBuying 1 1662720839 0 UC_02_TicketSearchWithoutBuying localhost 0 1
+28 0 UC_02_TicketSearchWithoutBuying 1 1662720839 0 localhost 0
+28 8 UC_02_TicketSearchWithoutBuying 1  0 0
+28 2 UC_02_TicketSearchWithoutBuying 1 1662720839 0 p 0 0
+28 4 uc_06_registraition_random_user 1 1662720849 0 uc_06_registraition_random_user localhost 0 1
+28 0 uc_06_registraition_random_user 1 1662720849 0 localhost 0
+28 8 uc_06_registraition_random_user 1  0 0
+28 2 uc_06_registraition_random_user 1 1662720849 0 p 0 0
+28 4 uc_07_ticket_search_without_buying_with_flight_selection 2 1662720859 0 uc_07_ticket_search_without_buying_with_flight_selection localhost 0 1
+28 0 uc_07_ticket_search_without_buying_with_flight_selection 2 1662720859 0 localhost 0
+28 8 uc_07_ticket_search_without_buying_with_flight_selection 2  0 0
+28 2 uc_07_ticket_search_without_buying_with_flight_selection 2 1662720859 0 p 0 0
+28 4 uc_01_login_logout 2 1662720869 0 uc_01_login_logout localhost 0 1
+28 0 uc_01_login_logout 2 1662720869 0 localhost 0
+28 8 uc_01_login_logout 2  0 0
+28 2 uc_01_login_logout 2 1662720869 0 p 0 0
+28 4 uc_03_ticket_buying 3 1662720879 0 uc_03_ticket_buying localhost 0 1
+28 0 uc_03_ticket_buying 3 1662720879 0 localhost 0
+28 8 uc_03_ticket_buying 3  0 0
+28 2 uc_03_ticket_buying 3 1662720879 0 p 0 0
+28 1 uc_03_ticket_buying 1 1662722199 0 2
+28 1 uc_07_ticket_search_without_buying_with_flight_selection 1 1662722209 0 2
+28 1 uc_01_login_logout 1 1662722219 0 2
+28 1 uc_05_canceling_flight 1 1662722235 0 2
+28 1 uc_03_ticket_buying 2 1662722239 0 2
+28 1 UC_02_TicketSearchWithoutBuying 1 1662722249 0 2
+28 1 uc_07_ticket_search_without_buying_with_flight_selection 2 1662722269 0 2
+28 1 uc_06_registraition_random_user 1 1662722276 0 2
+28 1 uc_01_login_logout 2 1662722279 0 2
+28 1 uc_03_ticket_buying 3 1662722289 0 2
+28 12 1662722290 1 1662722290 0 1662722290
