@@ -3,7 +3,7 @@ Action()
 	int flightIdLegth;
 	int randomNumber;
 	
-	lr_start_transaction("UC_04_ItineraryListBrowsing");
+	lr_start_transaction("UC_05_CancelingFlight");
 	
 		lr_start_transaction("openHomePage");
 
@@ -127,7 +127,7 @@ Action()
 	
 		lr_end_transaction("logout",LR_AUTO);*/
 	
-	lr_end_transaction("UC_04_ItineraryListBrowsing", LR_AUTO);
+	lr_end_transaction("UC_05_CancelingFlight", LR_AUTO);
 
 	return 0;
 }

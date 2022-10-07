@@ -1,15 +1,15 @@
-Virtual User Script started at: 07.09.2022 21:56:30
+Virtual User Script started at: 26.09.2022 20:26:20
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (янв 05 2021 19:27:22)  	[MsgId: MMSG-26983]
 Run mode: HTML  	[MsgId: MMSG-26993]
 Replay user agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko  	[MsgId: MMSG-26988]
-Runtime Settings file: "D:\Load Testing XSET\Load-Testing-XSET\Скрипты\UC_05_CancelingFlight\\default.cfg"  	[MsgId: MMSG-27141]
+Runtime Settings file: "D:\Load Testing XSET\Load-Testing-XSET\Scripts\UC_05_CancelingFlight\\default.cfg"  	[MsgId: MMSG-27141]
 Ending action vuser_init.
 Running Vuser...
 Starting iteration 1.
 Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
 Starting action Action.
-Action.c(6): Notify: Transaction "UC_04_ItineraryListBrowsing" started.
+Action.c(6): Notify: Transaction "UC_05_CancelingFlight" started.
 Action.c(8): Notify: Transaction "openHomePage" started.
 ../Library/CommonFunctions.h(6): web_reg_save_param started  	[MsgId: MMSG-26355]
 ../Library/CommonFunctions.h(6): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
@@ -20,19 +20,19 @@ Action.c(8): Notify: Transaction "openHomePage" started.
 ../Library/CommonFunctions.h(11): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
 ../Library/CommonFunctions.h(11): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
 ../Library/CommonFunctions.h(11): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
-../Library/CommonFunctions.h(11): Notify: Saving Parameter "userSession = 134676.143377886zQcHtAtpVcftVfztptctHf".
+../Library/CommonFunctions.h(11): Notify: Saving Parameter "userSession = 134808.682057513zQDtccVpfiDDDDDDtVzAfpDcQf".
 ../Library/CommonFunctions.h(11): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
-../Library/CommonFunctions.h(11): web_url("WebTours") was successful, 10074 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+../Library/CommonFunctions.h(11): web_url("WebTours") was successful, 10078 body bytes, 2377 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
 ../Library/CommonFunctions.h(21): web_set_sockets_option started  	[MsgId: MMSG-26355]
 ../Library/CommonFunctions.h(21): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
-Action.c(12): Notify: Transaction "openHomePage" ended with a "Pass" status (Duration: 4.5005 Wasted Time: 0.0715).
+Action.c(12): Notify: Transaction "openHomePage" ended with a "Pass" status (Duration: 0.7114 Wasted Time: 0.0741).
 Action.c(14): lr_think_time: 5.00 seconds.
 Action.c(16): Notify: Transaction "login" started.
 ../Library/CommonFunctions.h(26): web_reg_find started  	[MsgId: MMSG-26355]
 ../Library/CommonFunctions.h(26): Notify: Parameter Substitution: parameter "userName" =  "user00"
 ../Library/CommonFunctions.h(26): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
 ../Library/CommonFunctions.h(31): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
-../Library/CommonFunctions.h(31): Notify: Parameter Substitution: parameter "userSession" =  "134676.143377886zQcHtAtpVcftVfztptctHf"
+../Library/CommonFunctions.h(31): Notify: Parameter Substitution: parameter "userSession" =  "134808.682057513zQDtccVpfiDDDDDDtVzAfpDcQf"
 ../Library/CommonFunctions.h(31): Notify: Parameter Substitution: parameter "userName" =  "user00"
 ../Library/CommonFunctions.h(31): Notify: Next row for parameter password = 1 [table  = password].
 ../Library/CommonFunctions.h(31): Notify: Parameter Substitution: parameter "password" =  "12345"
@@ -44,7 +44,7 @@ Action.c(16): Notify: Transaction "login" started.
 ../Library/CommonFunctions.h(31): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 ../Library/CommonFunctions.h(31): Registered web_reg_find successful for "Text=Welcome, <b>user00</b>" (count=1)  	[MsgId: MMSG-26364]
 ../Library/CommonFunctions.h(31): web_submit_data("login.pl") was successful, 5781 body bytes, 2057 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(20): Notify: Transaction "login" ended with a "Pass" status (Duration: 0.2301 Wasted Time: 0.0055).
+Action.c(20): Notify: Transaction "login" ended with a "Pass" status (Duration: 0.1756 Wasted Time: 0.0065).
 Action.c(22): lr_think_time: 5.00 seconds.
 Action.c(24): Notify: Transaction "browsingItenerary" started.
 Action.c(26): web_reg_find started  	[MsgId: MMSG-26355]
@@ -58,56 +58,49 @@ Action.c(37): Resource "http://localhost:1080/WebTours/images/flights.gif" is in
 Action.c(37): Found resource "http://localhost:1080/WebTours/images/in_itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
 Action.c(37): Found resource "http://localhost:1080/WebTours/images/home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
 Action.c(37): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(37): Notify: Saving Parameter "flightId_1 = 34081-783-fl".
-Action.c(37): Notify: Saving Parameter "flightId_2 = 141152-15470-fl".
-Action.c(37): Notify: Saving Parameter "flightId_3 = 11163-2340-fl".
-Action.c(37): Notify: Saving Parameter "flightId_4 = 9694-3135-fl".
-Action.c(37): Notify: Saving Parameter "flightId_5 = 23761-3888-fl".
-Action.c(37): Notify: Saving Parameter "flightId_6 = 215608-46263-fl".
-Action.c(37): Notify: Saving Parameter "flightId_7 = 215971-53941-fl".
-Action.c(37): Notify: Saving Parameter "flightId_8 = 10860-6170-fl".
-Action.c(37): Notify: Saving Parameter "flightId_9 = 300045-69324-fl".
-Action.c(37): Notify: Saving Parameter "flightId_10 = 1540-7737-fl".
-Action.c(37): Notify: Saving Parameter "flightId_11 = 103803-84823-fl".
+Action.c(37): Notify: Saving Parameter "flightId_1 = 14567-794-fl".
+Action.c(37): Notify: Saving Parameter "flightId_2 = 34893-1548-fl".
+Action.c(37): Notify: Saving Parameter "flightId_3 = 25688-2352-fl".
+Action.c(37): Notify: Saving Parameter "flightId_4 = 5612-3118-fl".
+Action.c(37): Notify: Saving Parameter "flightId_5 = 27782-3855-fl".
+Action.c(37): Notify: Saving Parameter "flightId_6 = 3724-4658-fl".
+Action.c(37): Notify: Saving Parameter "flightId_7 = 119298-53927-fl".
+Action.c(37): Notify: Saving Parameter "flightId_8 = 14833-6192-fl".
+Action.c(37): Notify: Saving Parameter "flightId_9 = 18265-6936-fl".
+Action.c(37): Notify: Saving Parameter "flightId_10 = 5192-7706-fl".
+Action.c(37): Notify: Saving Parameter "flightId_11 = 21910-8507-fl".
+Action.c(37): Notify: Saving Parameter "flightId_12 = 5676-9250-fl".
+Action.c(37): Notify: Saving Parameter "flightId_13 = 19352-10040-fl".
+Action.c(37): Notify: Saving Parameter "flightId_14 = 19636-10784-fl".
+Action.c(37): Notify: Saving Parameter "flightId_15 = 363774-115531-fl".
+Action.c(37): Notify: Saving Parameter "flightId_16 = 170779-123156-fl".
+Action.c(37): Notify: Saving Parameter "flightId_17 = 304896-130939-fl".
+Action.c(37): Notify: Saving Parameter "flightId_18 = 17511-13909-fl".
+Action.c(37): Notify: Saving Parameter "flightId_19 = 318558-146235-fl".
+Action.c(37): Notify: Saving Parameter "flightId_20 = 315223-153926-fl".
+Action.c(37): Notify: Saving Parameter "flightId_21 = 2410-1621-fl".
+Action.c(37): Notify: Saving Parameter "flightId_22 = 33348-16955-fl".
+Action.c(37): Notify: Saving Parameter "flightId_23 = 4935-17712-fl".
 Action.c(37): Found resource "http://localhost:1080/WebTours/images/cancelreservation.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
 Action.c(37): Found resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
 Action.c(37): Registered web_reg_find successful for "Text=Itinerary" (count=3)  	[MsgId: MMSG-26364]
-Action.c(37): Notify: Saving Parameter "flightId_count = 11".
-Action.c(37): web_url("Itinerary Button") was successful, 19051 body bytes, 1921 header bytes, 59 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(47): Notify: Transaction "browsingItenerary" ended with a "Pass" status (Duration: 0.2021 Wasted Time: 0.0061).
-Action.c(49): lr_think_time: 5.00 seconds.
+Action.c(37): Notify: Saving Parameter "flightId_count = 23".
+Action.c(37): web_url("Itinerary Button") was successful, 32714 body bytes, 1921 header bytes, 83 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(47): Notify: Transaction "browsingItenerary" ended with a "Pass" status (Duration: 0,1949 Wasted Time: 0,0060).
+Action.c(49): lr_think_time: 5,00 seconds.
 Action.c(51): Notify: Transaction "CancelingFlight" started.
-Action.c(53): Notify: Parameter Substitution: parameter "flightId_count" =  "11"
-Action.c(59): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(59): Notify: Parameter Substitution: parameter "flightId_1" =  "34081-783-fl"
-Action.c(59): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(64): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(64): Notify: Parameter Substitution: parameter "flightId_2" =  "141152-15470-fl"
-Action.c(64): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(69): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(69): Notify: Parameter Substitution: parameter "flightId_3" =  "11163-2340-fl"
-Action.c(69): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(74): web_submit_form("itinerary.pl") started  	[MsgId: MMSG-26355]
-Action.c(74): Submitting form to "http://localhost:1080/cgi-bin/itinerary.pl", Target Frame=""  	[MsgId: MMSG-27978]
-Action.c(74): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(74): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(74): Registered web_reg_find successful for "Text=34081-783-fl"  	[MsgId: MMSG-26362]
-Action.c(74): Registered web_reg_find successful for "Text=141152-15470-fl"  	[MsgId: MMSG-26362]
-Action.c(74): Registered web_reg_find successful for "Text=11163-2340-fl"  	[MsgId: MMSG-26362]
-Action.c(74): web_submit_form("itinerary.pl") was successful, 10576 body bytes, 256 header bytes, 27 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(122): Notify: Transaction "CancelingFlight" ended with a "Pass" status (Duration: 0.3635 Wasted Time: 0.0037).
-Action.c(124): Notify: Transaction "logout" started.
-../Library/CommonFunctions.h(51): web_reg_find started  	[MsgId: MMSG-26355]
-../Library/CommonFunctions.h(51): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-../Library/CommonFunctions.h(55): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
-../Library/CommonFunctions.h(55): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
-../Library/CommonFunctions.h(55): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
-../Library/CommonFunctions.h(55): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
-../Library/CommonFunctions.h(55): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-../Library/CommonFunctions.h(55): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie" (count=1)  	[MsgId: MMSG-26364]
-../Library/CommonFunctions.h(55): web_url("SignOff Button") was successful, 2175 body bytes, 583 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(128): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,1973 Wasted Time: 0,0034).
-Action.c(130): Notify: Transaction "UC_04_ItineraryListBrowsing" ended with a "Pass" status (Duration: 20,5952 Think Time: 15,0008 Wasted Time: 0,0902).
+Action.c(53): Notify: Parameter Substitution: parameter "flightId_count" =  "23"
+Action.c(108): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(108): Notify: Parameter Substitution: parameter "flightId_1" =  "14567-794-fl"
+Action.c(108): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(113): web_submit_form("itinerary.pl") started  	[MsgId: MMSG-26355]
+Action.c(113): Submitting form to "http://localhost:1080/cgi-bin/itinerary.pl", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(113): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(113): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(113): Registered web_reg_find successful for "Text=14567-794-fl"  	[MsgId: MMSG-26362]
+Action.c(113): web_submit_form("itinerary.pl") was successful, 26508 body bytes, 256 header bytes, 59 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(122): Notify: Transaction "CancelingFlight" ended with a "Pass" status (Duration: 0,1631 Wasted Time: 0,0035).
+Action.c(130): Notify: Transaction "UC_05_CancelingFlight" ended with a "Pass" status (Duration: 16,3336 Think Time: 14,9995 Wasted Time: 0,0901).
 Ending action Action.
 Ending iteration 1.
 Ending Vuser...
